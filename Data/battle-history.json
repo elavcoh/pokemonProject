@@ -2308,5 +2308,54 @@
     "playerScore": 58.06,
     "opponentScore": 72.62,
     "opponentName": "elav"
+  },
+  {
+    "id": "1754601687887",
+    "playerId": "920f6faf-3acc-4e61-8719-3aae5939035b",
+    "playerEmail": "elavcohen7@gmail.com",
+    "timestamp": 1754601687887,
+    "type": "vs-player",
+    "result": "lost",
+    "playerPokemon": {
+      "id": 37,
+      "name": "vulpix",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png",
+      "types": [
+        "fire"
+      ],
+      "abilities": [
+        "flash-fire",
+        "drought"
+      ],
+      "stats": {
+        "hp": 38,
+        "attack": 41,
+        "defense": 40,
+        "speed": 65
+      }
+    },
+    "opponentPokemon": {
+      "id": 215,
+      "name": "sneasel",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/215.png",
+      "types": [
+        "dark",
+        "ice"
+      ],
+      "abilities": [
+        "inner-focus",
+        "keen-eye",
+        "pickpocket"
+      ],
+      "stats": {
+        "hp": 55,
+        "attack": 95,
+        "defense": 55,
+        "speed": 115
+      }
+    },
+    "playerScore": 43.19,
+    "opponentScore": 77.21,
+    "opponentName": "elavv"
   }
 ]

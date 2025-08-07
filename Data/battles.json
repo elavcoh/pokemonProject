@@ -1038,5 +1038,32 @@
     "player2Score": 72.62,
     "winner": "920f6faf-3acc-4e61-8719-3aae5939035b",
     "winnerName": "elav"
+  },
+  {
+    "id": "1754601687884",
+    "timestamp": "2025-08-07T21:21:27.884Z",
+    "player1Id": "920f6faf-3acc-4e61-8719-3aae5939035b",
+    "player1Name": "elav",
+    "player1Pokemon": "vulpix",
+    "player1Score": 43.19,
+    "player2Id": "37c2417a-d95a-47fb-9bd6-588cee0198eb",
+    "player2Name": "elavv",
+    "player2Pokemon": "sneasel",
+    "player2Score": 77.21,
+    "winner": "37c2417a-d95a-47fb-9bd6-588cee0198eb",
+    "winnerName": "elavv"
+  },
+  {
+    "id": "1754601700190",
+    "timestamp": "2025-08-07T21:21:40.190Z",
+    "player1Id": "920f6faf-3acc-4e61-8719-3aae5939035b",
+    "player1Name": "elav",
+    "player1Pokemon": "jellicent",
+    "player1Score": 77.95,
+    "player2Id": "bot",
+    "player2Name": "Bot",
+    "player2Pokemon": "pineco",
+    "player2Score": 64.41,
+    "winner": "920f6faf-3acc-4e61-8719-3aae5939035b"
   }
 ]
