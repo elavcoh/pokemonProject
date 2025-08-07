@@ -1,0 +1,164 @@
+/* bot battle page stylesheet */
+/* controls interface for picking pokemon and starting bot battles */
+
+/* global body styling with pokemon background */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-image: url('https://wallpapercave.com/uwp/uwp4775786.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* user auth header with logout functionality */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background: #2a75bb;
+    color: #fff;
+  }
+  .logout-btn {
+    background-color: #ffcb05;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    color: #2a75bb;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  .logout-btn:hover { background-color: #f5b700; }
+  
+/* main container for bot battle interface */
+.vs-bot-container {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 30px 20px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 12px;
+    text-align: center;
+  }
+
+/* page title with pixel font and outline */
+.vs-bot-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    color: #FFCB05;
+    text-shadow:
+      -2px 0 #2A75BB,
+       0 2px #2A75BB,
+       2px 0 #2A75BB,
+       0 -2px #2A75BB;
+    margin-bottom: 20px;
+  }
+
+/* loading screen styling */
+.loading-screen {
+    font-family: 'Segoe UI', sans-serif;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+/* reuse pokemon grid and card styles from pokemon.css */
+  
+/* highlight selected pokemon card */
+.pokemon-card.selected {
+    border: 3px solid #FFCB05;
+  }
+  
+/* start battle button styling */
+#start-battle-btn {
+    margin-top: 20px;
+    background: linear-gradient(135deg, #ffcb05 0%, #f5b700 100%);
+    border: 2px solid #2a75bb;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    color: #2a75bb;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(42, 117, 187, 0.2);
+    position: relative;
+    overflow: hidden;
+  }
+  
+/* button shine effect */
+#start-battle-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s;
+  }
+  
+#start-battle-btn:hover::before {
+    left: 100%;
+  }
+  
+/* disabled button state */
+#start-battle-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+  }
+/* enabled button hover effect */
+#start-battle-btn:hover:not(:disabled) {
+    background: linear-gradient(135deg, #2a75bb 0%, #1e5aa8 100%);
+    color: #ffcb05;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(42, 117, 187, 0.4);
+    border-color: #ffcb05;
+  }
+  
+/* navigation buttons styling */
+.nav-btn {
+    background: linear-gradient(135deg, #ffcb05 0%, #f5b700 100%);
+    border: 2px solid #2a75bb;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    color: #2a75bb;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(42, 117, 187, 0.2);
+    position: relative;
+    overflow: hidden;
+  }
+  
+/* nav button shine effect */
+.nav-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s;
+  }
+  
+.nav-btn:hover::before {
+    left: 100%;
+  }
+  
+/* nav button hover effect */
+.nav-btn:hover {
+    background: linear-gradient(135deg, #2a75bb 0%, #1e5aa8 100%);
+    color: #ffcb05;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(42, 117, 187, 0.4);
+    border-color: #ffcb05;
+  }
+  

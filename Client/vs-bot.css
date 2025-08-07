@@ -1,0 +1,94 @@
+/* vs bot page stylesheet */
+/* controls bot battle interface styling and pokemon selection */
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background: #2a75bb;
+    color: #fff;
+  }
+  .logout-btn {
+    background-color: #ffcb05;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    color: #2a75bb;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  .logout-btn:hover { background-color: #f5b700; }
+  
+  .vs-bot-container {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 30px 20px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 12px;
+    text-align: center;
+  }
+  .vs-bot-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    color: #FFCB05;
+    text-shadow:
+      -2px 0 #2A75BB,
+       0 2px #2A75BB,
+       2px 0 #2A75BB,
+       0 -2px #2A75BB;
+    margin-bottom: 20px;
+  }
+  .loading-screen {
+    font-family: 'Segoe UI', sans-serif;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* reuse .pokemon-grid/.pokemon-card from pokemon.css */
+  
+  /* highlight selected */
+  .pokemon-card.selected {
+    border: 3px solid #FFCB05;
+  }
+  
+  /* start battle */
+  #start-battle-btn {
+    margin-top: 20px;
+    background-color: #ffcb05;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #2a75bb;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  #start-battle-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  #start-battle-btn:hover:not(:disabled) {
+    background-color: #f5b700;
+  }
+  
+  /* nav buttons */
+  .nav-btn {
+    background-color: #ffcb05;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #2a75bb;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+  }
+  .nav-btn:hover {
+    background-color: #f5b700;
+  }
+  

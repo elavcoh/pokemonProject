@@ -1,0 +1,214 @@
+/* favorites page stylesheet */
+/* controls favorites page layout, pokemon cards, and interactive elements */
+
+/* general body and layout styles */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('https://wallpapercave.com/uwp/uwp4775786.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* rest of your file remains unchanged below */
+
+
+/* main title style */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 20px;
+  color: #2c3e50;
+}
+
+/* container and select for sorting pokeon list */
+#sort-container {
+  margin: 20px;
+  font-size: 1.1rem;
+}
+
+#sort-select {
+  padding: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* hidden loading message for when pokeon data is loading */
+#loading-screen {
+  display: none;
+  font-size: 1.2rem;
+  color: #e67e22;
+  margin-top: 20px;
+}
+
+.pokemon-card {
+  background-color: rgba(182, 181, 206, 0.822);
+  border: 2px solid rgba(223, 232, 149, 0.416);      
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease;
+
+  /* added for better readability */
+  font-weight: 600;
+  color: #222;
+}
+
+.pokemon-card:hover {
+  transform: translateY(-5px);
+}
+
+/* pokeon image inside the card */
+.pokemon-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* pokeon name style */
+.pokemon-card h2 {
+  font-size: 1.5rem;
+  color: #111; /* darker for better contrast */
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+/* pokeon details paragraph style */
+.pokemon-card p {
+  font-size: 1rem;
+  color: #444; /* darker gray for better readability */
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* button style inside pokeon cards */
+.pokemon-card button {
+  background: linear-gradient(135deg, #ffcb05 0%, #f5b700 100%);
+  border: 2px solid #2a75bb;
+  color: #2a75bb;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+  box-shadow: 0 4px 15px rgba(42, 117, 187, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.pokemon-card button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s;
+}
+
+.pokemon-card button:hover::before {
+  left: 100%;
+}
+
+.pokemon-card button:hover {
+  background: linear-gradient(135deg, #2a75bb 0%, #1e5aa8 100%);
+  color: #ffcb05;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(42, 117, 187, 0.4);
+  border-color: #ffcb05;
+}
+
+.pokemon-card button:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* grid container for pokeon cards, wraps nicely */
+.pokemon-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* container for favorites pokeon */
+#favorites-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* responsive design for smaller screens */
+@media (max-width: 768px) {
+  .pokemon-card {
+      width: 200px;
+      padding: 15px;
+  }
+
+  #sort-container {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pokemon-card {
+      width: 150px;
+      padding: 10px;
+  }
+
+  h1 {
+      font-size: 2rem;
+  }
+}
+
+/* favorites page style */
+.favorites-page {
+  text-align: center;
+}
+
+/* back button style on favorites page */
+#back-button {
+  background-color: #ffcb05;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #2a75bb;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#back-button:hover {
+  background-color: #f5b700;
+}
+
+/* download button style for json */
+#download-json-button {
+  background-color: #2ecc71;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+#download-json-button:hover {
+  background-color: #27ae60;
+}

@@ -1,0 +1,59 @@
+<!-- battle history page - shows user's past battles and stats -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle History</title>
+    <link rel="stylesheet" href="battle-history.css">
+</head>
+<body>
+    <!-- main container for battle history page -->
+    <div class="container">
+        <!-- header with back button and page title -->
+        <div class="header">
+            <button class="back-btn" onclick="window.location.href='/arena'">← back to arena</button>
+            <h1>battle history</h1>
+        </div>
+        
+        <!-- user info and intro text -->
+        <div class="user-info">
+            <p>welcome, <span id="user-name">user</span>!</p>
+            <p>your battle history:</p>
+        </div>
+        
+        <!-- filter buttons for battle type/result -->
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">all battles</button>
+            <button class="filter-btn" data-filter="won">won</button>
+            <button class="filter-btn" data-filter="lost">lost</button>
+            <button class="filter-btn" data-filter="vs-bot">vs bot</button>
+            <button class="filter-btn" data-filter="vs-player">vs player</button>
+        </div>
+        
+        <!-- battle history grid/list -->
+        <div id="battle-history" class="battle-history">
+            <div class="loading">loading battle history...</div>
+        </div>
+        
+        <!-- stats summary cards -->
+        <div class="stats">
+            <div class="stat-card">
+                <h3>total battles</h3>
+                <span id="total-battles">0</span>
+            </div>
+            <div class="stat-card">
+                <h3>wins</h3>
+                <span id="total-wins">0</span>
+            </div>
+            <div class="stat-card">
+                <h3>win rate</h3>
+                <span id="win-rate">0%</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- battle history page logic -->
+    <script src="battle-history.js"></script>
+</body>
+</html> 

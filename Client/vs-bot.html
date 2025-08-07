@@ -1,0 +1,154 @@
+<!-- vs bot page - lets users pick pokemon and battle against ai -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Battle vs Bot</title>
+
+  <!-- global pokemon styles -->
+  <link rel="stylesheet" href="pokemon.css" />
+  <!-- page-specific styles -->
+  <link rel="stylesheet" href="vs-bot.css" />
+  <!-- pixel font -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- user auth header with logout -->
+  <header class="site-header">
+    <div id="user-info">loading user…</div>
+    <a href="/logout" class="logout-btn">logout</a>
+  </header>
+
+  <!-- main vs bot interface -->
+  <div class="vs-bot-container">
+    <!-- nav buttons for user flow -->
+    <button id="back-btn" class="nav-btn">back</button>
+    <button id="back-to-search-btn" class="nav-btn">back to search</button>
+
+    <h1 class="vs-bot-title">choose your pokemon</h1>
+    <div id="loading-screen" class="loading-screen">loading favorites…</div>
+    <div id="favorites-container" class="pokemon-grid"></div>
+    <button id="start-battle-btn" disabled>start battle</button>
+  </div>
+
+  <!-- vs bot logic and interaction -->
+  <script>
+    let favorites = [], selectedPokemonId = null;
+
+    // check user and show name in header
+    fetch('/api/me', { credentials: 'same-origin' })
+      .then(r => { if (!r.ok) throw 0; return r.json(); })
+      .then(u => {
+        document.getElementById('user-info').textContent =
+          'logged in as ' + u.firstName;
+      })
+      .catch(() => location.href = '/login');
+
+    // flip favorite status and update server
+    async function toggleFavorite(p, card, btn) {
+      const idx = favorites.findIndex(f => f.id === p.id);
+      const removing = idx > -1;
+      removing ? favorites.splice(idx,1) : favorites.push(p);
+      card.classList.toggle('added-to-favorites', !removing);
+      btn.textContent = removing
+        ? 'add to favorites'
+        : 'remove from favorites';
+      try {
+        await fetch(`/api/favorites/${removing?'remove':'add'}`, {
+          method: 'POST',
+          headers: {'Content-Type':'application/json'},
+          credentials: 'same-origin',
+          body: JSON.stringify({ id: p.id })
+        });
+      } catch(e){ console.error(e); }
+    }
+
+    // make pokemon card without video links
+    function createPokemonCard(p) {
+      const card = document.createElement('div');
+      card.className = 'pokemon-card';
+      if (favorites.some(f=>f.id===p.id))
+        card.classList.add('added-to-favorites');
+      card.dataset.id = p.id;
+
+      card.innerHTML = `
+        <h2>#${p.id} - ${p.name}</h2>
+        <img src="${p.image}" alt="${p.name}" />
+        <p><strong>types:</strong> ${p.types.join(', ')}</p>
+        <p><strong>abilities:</strong> ${p.abilities.join(', ')}</p>
+        <div class="details">
+          <p><strong>HP:</strong> ${p.stats.hp}</p>
+          <p><strong>Attack:</strong> ${p.stats.attack}</p>
+          <p><strong>Defense:</strong> ${p.stats.defense}</p>
+          <p><strong>Speed:</strong> ${p.stats.speed}</p>
+        </div>
+      `;
+
+      // add/remove favorites button
+      const favBtn = document.createElement('button');
+      favBtn.className = 'add-to-favorites';
+      favBtn.textContent = favorites.some(f=>f.id===p.id)
+        ? 'remove from favorites'
+        : 'add to favorites';
+      favBtn.addEventListener('click', e => {
+        e.stopPropagation();
+        toggleFavorite(p, card, favBtn);
+      });
+      card.appendChild(favBtn);
+
+      // expand/collapse to show stats
+      card.addEventListener('click', e => {
+        if (e.target.closest('button')) return;
+        card.classList.toggle('expanded');
+      });
+
+      return card;
+    }
+
+    // fetch and render favorites
+    const container = document.getElementById('favorites-container');
+    fetch('/api/favorites', { credentials: 'same-origin' })
+      .then(r => { if (!r.ok) throw 0; return r.json(); })
+      .then(data => {
+        favorites = data.favorites || [];
+        document.getElementById('loading-screen').style.display = 'none';
+        if (!favorites.length) {
+          container.textContent = 'You have no favorites yet.';
+          return;
+        }
+        favorites.forEach(p => 
+          container.appendChild(createPokemonCard(p))
+        );
+      })
+      .catch(() => {
+        document.getElementById('loading-screen')
+          .textContent = 'Failed to load favorites.';
+      });
+
+    // single-select + enable Start Battle
+    container.addEventListener('click', e => {
+      const card = e.target.closest('.pokemon-card');
+      if (!card) return;
+      document.querySelectorAll('.pokemon-card.selected')
+        .forEach(c => c.classList.remove('selected'));
+      card.classList.add('selected');
+      selectedPokemonId = card.dataset.id;
+      document.getElementById('start-battle-btn').disabled = false;
+    });
+
+    document.getElementById('start-battle-btn')
+      .addEventListener('click', () => {
+        const botId = Math.floor(Math.random() * 898) + 1;
+        window.location.href = 
+          `battle.html?player=${selectedPokemonId}&bot=${botId}`;
+      });
+
+    // nav buttons
+    document.getElementById('back-btn')
+      .addEventListener('click', () => history.back());
+    document.getElementById('back-to-search-btn')
+      .addEventListener('click', () => location.href = '/');
+  </script>
+</body>
+</html>

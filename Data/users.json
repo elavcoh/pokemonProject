@@ -1,0 +1,416 @@
+[
+  {
+    "id": "f5ad4d88-8a91-4292-9eeb-40b29826c26f",
+    "firstName": "Alon",
+    "email": "test@gmail.com",
+    "password": "$2b$10$heLYof7p12oKaMAxFJj6DuQaxj0vtQtEotJKfGJgf1aeLDNON.CJO",
+    "favorites": [
+      {
+        "id": 25,
+        "name": "pikachu",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
+        "types": [
+          "electric"
+        ],
+        "abilities": [
+          "static",
+          "lightning-rod"
+        ],
+        "stats": {
+          "hp": 35,
+          "attack": 55,
+          "defense": 40,
+          "speed": 90
+        }
+      },
+      {
+        "id": 1,
+        "name": "bulbasaur",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+        "types": [
+          "grass",
+          "poison"
+        ],
+        "abilities": [
+          "overgrow",
+          "chlorophyll"
+        ],
+        "stats": {
+          "hp": 45,
+          "attack": 49,
+          "defense": 49,
+          "speed": 45
+        }
+      },
+      {
+        "id": 153,
+        "name": "bayleef",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/153.png",
+        "types": [
+          "grass"
+        ],
+        "abilities": [
+          "overgrow",
+          "leaf-guard"
+        ],
+        "stats": {
+          "hp": 60,
+          "attack": 62,
+          "defense": 80,
+          "speed": 60
+        }
+      }
+    ],
+    "online": false,
+    "lastSeen": 1754298131295,
+    "dailyBattles": 0
+  },
+  {
+    "id": "37c2417a-d95a-47fb-9bd6-588cee0198eb",
+    "firstName": "elavv",
+    "email": "elavcohen8@gmail.com",
+    "password": "$2b$10$qCOMVfPDOf5RdtxIQXZ2SOUQLL16.AfIl43cKrcrZIQisbPB0U1qe",
+    "favorites": [
+      {
+        "id": 124,
+        "name": "jynx",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+        "types": [
+          "ice",
+          "psychic"
+        ],
+        "abilities": [
+          "oblivious",
+          "forewarn",
+          "dry-skin"
+        ],
+        "stats": {
+          "hp": 65,
+          "attack": 50,
+          "defense": 35,
+          "speed": 95
+        }
+      },
+      {
+        "id": 91,
+        "name": "cloyster",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
+        "types": [
+          "water",
+          "ice"
+        ],
+        "abilities": [
+          "shell-armor",
+          "skill-link",
+          "overcoat"
+        ],
+        "stats": {
+          "hp": 50,
+          "attack": 95,
+          "defense": 180,
+          "speed": 70
+        }
+      },
+      {
+        "id": 131,
+        "name": "lapras",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
+        "types": [
+          "water",
+          "ice"
+        ],
+        "abilities": [
+          "water-absorb",
+          "shell-armor",
+          "hydration"
+        ],
+        "stats": {
+          "hp": 130,
+          "attack": 85,
+          "defense": 80,
+          "speed": 60
+        }
+      },
+      {
+        "id": 87,
+        "name": "dewgong",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
+        "types": [
+          "water",
+          "ice"
+        ],
+        "abilities": [
+          "thick-fat",
+          "hydration",
+          "ice-body"
+        ],
+        "stats": {
+          "hp": 90,
+          "attack": 70,
+          "defense": 80,
+          "speed": 70
+        }
+      },
+      {
+        "id": 144,
+        "name": "articuno",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png",
+        "types": [
+          "ice",
+          "flying"
+        ],
+        "abilities": [
+          "pressure",
+          "snow-cloak"
+        ],
+        "stats": {
+          "hp": 90,
+          "attack": 85,
+          "defense": 100,
+          "speed": 85
+        }
+      },
+      {
+        "id": 215,
+        "name": "sneasel",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/215.png",
+        "types": [
+          "dark",
+          "ice"
+        ],
+        "abilities": [
+          "inner-focus",
+          "keen-eye",
+          "pickpocket"
+        ],
+        "stats": {
+          "hp": 55,
+          "attack": 95,
+          "defense": 55,
+          "speed": 115
+        }
+      },
+      {
+        "id": 362,
+        "name": "glalie",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/362.png",
+        "types": [
+          "ice"
+        ],
+        "abilities": [
+          "inner-focus",
+          "ice-body",
+          "moody"
+        ],
+        "stats": {
+          "hp": 80,
+          "attack": 80,
+          "defense": 80,
+          "speed": 80
+        }
+      }
+    ],
+    "online": true,
+    "lastSeen": 1754600088662,
+    "dailyBattles": 0
+  },
+  {
+    "id": "3b26b1b4-4091-43ec-9e2e-7f5652d467b2",
+    "firstName": "Alon",
+    "email": "test3@gmail.com",
+    "password": "$2b$10$Lwzi0aYyyWL200k72lF37ON53QE/j2C./9Y.oVZscyw2j9Li7kdLK",
+    "favorites": [
+      {
+        "id": 890,
+        "name": "eternatus",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/890.png",
+        "types": [
+          "poison",
+          "dragon"
+        ],
+        "abilities": [
+          "pressure"
+        ],
+        "stats": {
+          "hp": 140,
+          "attack": 85,
+          "defense": 95,
+          "speed": 130
+        }
+      }
+    ],
+    "online": false,
+    "lastSeen": 1753892376862,
+    "dailyBattles": 0
+  },
+  {
+    "id": "test2-user-id-12345",
+    "firstName": "testtwo",
+    "email": "test2@gmail.com",
+    "password": "$2b$10$M1eQFSzS7u20uUWyP3HqyOHQ.i0v9Dlm7i7R6ZNuBeY9cbXXuknZO",
+    "favorites": [],
+    "online": false,
+    "lastSeen": 1753892376862,
+    "dailyBattles": 0
+  },
+  {
+    "id": "920f6faf-3acc-4e61-8719-3aae5939035b",
+    "firstName": "elav",
+    "email": "elavcohen7@gmail.com",
+    "password": "$2b$10$oVxX5o0.kOtQpx3xTxUc/edn3KzQc.RyV/RjBDeqF2lFrhtC4ozP.",
+    "favorites": [
+      {
+        "id": 875,
+        "name": "eiscue-ice",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/875.png",
+        "types": [
+          "ice"
+        ],
+        "abilities": [
+          "ice-face"
+        ],
+        "stats": {
+          "hp": 75,
+          "attack": 80,
+          "defense": 110,
+          "speed": 50
+        }
+      },
+      {
+        "id": 593,
+        "name": "jellicent",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/593.png",
+        "types": [
+          "water",
+          "ghost"
+        ],
+        "abilities": [
+          "water-absorb",
+          "cursed-body",
+          "damp"
+        ],
+        "stats": {
+          "hp": 100,
+          "attack": 60,
+          "defense": 70,
+          "speed": 60
+        }
+      },
+      {
+        "id": 378,
+        "name": "regice",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/378.png",
+        "types": [
+          "ice"
+        ],
+        "abilities": [
+          "clear-body",
+          "ice-body"
+        ],
+        "stats": {
+          "hp": 80,
+          "attack": 50,
+          "defense": 100,
+          "speed": 50
+        }
+      },
+      {
+        "id": 87,
+        "name": "dewgong",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
+        "types": [
+          "water",
+          "ice"
+        ],
+        "abilities": [
+          "thick-fat",
+          "hydration",
+          "ice-body"
+        ],
+        "stats": {
+          "hp": 90,
+          "attack": 70,
+          "defense": 80,
+          "speed": 70
+        }
+      },
+      {
+        "id": 131,
+        "name": "lapras",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
+        "types": [
+          "water",
+          "ice"
+        ],
+        "abilities": [
+          "water-absorb",
+          "shell-armor",
+          "hydration"
+        ],
+        "stats": {
+          "hp": 130,
+          "attack": 85,
+          "defense": 80,
+          "speed": 60
+        }
+      },
+      {
+        "id": 4,
+        "name": "charmander",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+        "types": [
+          "fire"
+        ],
+        "abilities": [
+          "blaze",
+          "solar-power"
+        ],
+        "stats": {
+          "hp": 39,
+          "attack": 52,
+          "defense": 43,
+          "speed": 65
+        }
+      },
+      {
+        "id": 5,
+        "name": "charmeleon",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
+        "types": [
+          "fire"
+        ],
+        "abilities": [
+          "blaze",
+          "solar-power"
+        ],
+        "stats": {
+          "hp": 58,
+          "attack": 64,
+          "defense": 58,
+          "speed": 80
+        }
+      },
+      {
+        "id": 37,
+        "name": "vulpix",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png",
+        "types": [
+          "fire"
+        ],
+        "abilities": [
+          "flash-fire",
+          "drought"
+        ],
+        "stats": {
+          "hp": 38,
+          "attack": 41,
+          "defense": 40,
+          "speed": 65
+        }
+      }
+    ],
+    "online": true,
+    "lastSeen": 1754600083718,
+    "dailyBattles": 0
+  }
+]

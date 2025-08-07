@@ -1,0 +1,2312 @@
+[
+  {
+    "id": "1753902576545",
+    "playerId": "7fc56996-c70c-47f6-9769-b156f29da9f9",
+    "playerEmail": "elavcohen7@gmail.com",
+    "timestamp": 1753902576545,
+    "type": "vs-player",
+    "result": "lost",
+    "playerPokemon": {
+      "id": 220,
+      "name": "swinub",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/220.png",
+      "types": [
+        "ice",
+        "ground"
+      ],
+      "abilities": [
+        "oblivious",
+        "snow-cloak",
+        "thick-fat"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 50,
+        "defense": 40,
+        "speed": 50
+      }
+    },
+    "opponentPokemon": {
+      "id": 91,
+      "name": "cloyster",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "shell-armor",
+        "skill-link",
+        "overcoat"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 95,
+        "defense": 180,
+        "speed": 70
+      }
+    },
+    "playerScore": 52.69,
+    "opponentScore": 99.58,
+    "opponentName": "elavv"
+  },
+  {
+    "id": "1753902633011",
+    "playerId": "7fc56996-c70c-47f6-9769-b156f29da9f9",
+    "playerEmail": "elavcohen7@gmail.com",
+    "timestamp": 1753902633011,
+    "type": "vs-player",
+    "result": "lost",
+    "playerPokemon": {
+      "id": 91,
+      "name": "cloyster",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "shell-armor",
+        "skill-link",
+        "overcoat"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 95,
+        "defense": 180,
+        "speed": 70
+      }
+    },
+    "opponentPokemon": {
+      "id": 91,
+      "name": "cloyster",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "shell-armor",
+        "skill-link",
+        "overcoat"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 95,
+        "defense": 180,
+        "speed": 70
+      }
+    },
+    "playerScore": 99.88,
+    "opponentScore": 100.16,
+    "opponentName": "elavv"
+  },
+  {
+    "id": "1753902663840",
+    "playerId": "7fc56996-c70c-47f6-9769-b156f29da9f9",
+    "playerEmail": "elavcohen7@gmail.com",
+    "timestamp": 1753902663840,
+    "type": "vs-player",
+    "result": "won",
+    "playerPokemon": {
+      "id": 87,
+      "name": "dewgong",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "thick-fat",
+        "hydration",
+        "ice-body"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 70,
+        "defense": 80,
+        "speed": 70
+      }
+    },
+    "opponentPokemon": {
+      "id": 124,
+      "name": "jynx",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+      "types": [
+        "ice",
+        "psychic"
+      ],
+      "abilities": [
+        "oblivious",
+        "forewarn",
+        "dry-skin"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 50,
+        "defense": 35,
+        "speed": 95
+      }
+    },
+    "playerScore": 82.54,
+    "opponentScore": 59.13,
+    "opponentName": "elavv"
+  },
+  {
+    "id": "1753902689978",
+    "playerId": "7fc56996-c70c-47f6-9769-b156f29da9f9",
+    "playerEmail": "elavcohen7@gmail.com",
+    "timestamp": 1753902689978,
+    "type": "vs-player",
+    "result": "won",
+    "playerPokemon": {
+      "id": 221,
+      "name": "piloswine",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/221.png",
+      "types": [
+        "ice",
+        "ground"
+      ],
+      "abilities": [
+        "oblivious",
+        "snow-cloak",
+        "thick-fat"
+      ],
+      "stats": {
+        "hp": 100,
+        "attack": 100,
+        "defense": 80,
+        "speed": 50
+      }
+    },
+    "opponentPokemon": {
+      "id": 124,
+      "name": "jynx",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+      "types": [
+        "ice",
+        "psychic"
+      ],
+      "abilities": [
+        "oblivious",
+        "forewarn",
+        "dry-skin"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 50,
+        "defense": 35,
+        "speed": 95
+      }
+    },
+    "playerScore": 93.45,
+    "opponentScore": 58.04,
+    "opponentName": "elavv"
+  },
+  {
+    "id": "1753971725863",
+    "playerId": "37c2417a-d95a-47fb-9bd6-588cee0198eb",
+    "playerEmail": "elavcohen8@gmail.com",
+    "timestamp": 1753971725863,
+    "type": "vs-player",
+    "result": "lost",
+    "playerPokemon": {
+      "id": 87,
+      "name": "dewgong",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "thick-fat",
+        "hydration",
+        "ice-body"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 70,
+        "defense": 80,
+        "speed": 70
+      }
+    },
+    "opponentPokemon": {
+      "id": 131,
+      "name": "lapras",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "water-absorb",
+        "shell-armor",
+        "hydration"
+      ],
+      "stats": {
+        "hp": 130,
+        "attack": 85,
+        "defense": 80,
+        "speed": 60
+      }
+    },
+    "playerScore": 82.91,
+    "opponentScore": 98.77,
+    "opponentName": "elav"
+  },
+  {
+    "id": "1753971731600",
+    "playerId": "5d6c6640-db88-4b0b-8071-ee5908c2445b",
+    "playerEmail": "elavcohen9@gmail.com",
+    "timestamp": 1753971731600,
+    "type": "vs-player",
+    "result": "lost",
+    "playerPokemon": {
+      "id": 91,
+      "name": "cloyster",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "shell-armor",
+        "skill-link",
+        "overcoat"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 95,
+        "defense": 180,
+        "speed": 70
+      }
+    },
+    "opponentPokemon": {
+      "id": 91,
+      "name": "cloyster",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "shell-armor",
+        "skill-link",
+        "overcoat"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 95,
+        "defense": 180,
+        "speed": 70
+      }
+    },
+    "playerScore": 98.21,
+    "opponentScore": 98.22,
+    "opponentName": "elavv"
+  },
+  {
+    "id": "1753971803742",
+    "playerId": "5d6c6640-db88-4b0b-8071-ee5908c2445b",
+    "playerEmail": "elavcohen9@gmail.com",
+    "timestamp": 1753971803742,
+    "type": "vs-player",
+    "result": "lost",
+    "playerPokemon": {
+      "id": 124,
+      "name": "jynx",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+      "types": [
+        "ice",
+        "psychic"
+      ],
+      "abilities": [
+        "oblivious",
+        "forewarn",
+        "dry-skin"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 50,
+        "defense": 35,
+        "speed": 95
+      }
+    },
+    "opponentPokemon": {
+      "id": 91,
+      "name": "cloyster",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "shell-armor",
+        "skill-link",
+        "overcoat"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 95,
+        "defense": 180,
+        "speed": 70
+      }
+    },
+    "playerScore": 60.16,
+    "opponentScore": 99.38,
+    "opponentName": "elavv"
+  },
+  {
+    "id": "1753971848745",
+    "playerId": "5d6c6640-db88-4b0b-8071-ee5908c2445b",
+    "playerEmail": "elavcohen9@gmail.com",
+    "timestamp": 1753971848745,
+    "type": "vs-player",
+    "result": "lost",
+    "playerPokemon": {
+      "id": 144,
+      "name": "articuno",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png",
+      "types": [
+        "ice",
+        "flying"
+      ],
+      "abilities": [
+        "pressure",
+        "snow-cloak"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 85,
+        "defense": 100,
+        "speed": 85
+      }
+    },
+    "opponentPokemon": {
+      "id": 91,
+      "name": "cloyster",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "shell-armor",
+        "skill-link",
+        "overcoat"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 95,
+        "defense": 180,
+        "speed": 70
+      }
+    },
+    "playerScore": 92.65,
+    "opponentScore": 100.32,
+    "opponentName": "elavv"
+  },
+  {
+    "id": "1753971864473",
+    "playerId": "5d6c6640-db88-4b0b-8071-ee5908c2445b",
+    "playerEmail": "elavcohen9@gmail.com",
+    "timestamp": 1753971864473,
+    "type": "vs-player",
+    "result": "won",
+    "playerPokemon": {
+      "id": 87,
+      "name": "dewgong",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "thick-fat",
+        "hydration",
+        "ice-body"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 70,
+        "defense": 80,
+        "speed": 70
+      }
+    },
+    "opponentPokemon": {
+      "id": 87,
+      "name": "dewgong",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "thick-fat",
+        "hydration",
+        "ice-body"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 70,
+        "defense": 80,
+        "speed": 70
+      }
+    },
+    "playerScore": 82.74,
+    "opponentScore": 82.36,
+    "opponentName": "elavv"
+  },
+  {
+    "id": "1753971913440",
+    "playerId": "5d6c6640-db88-4b0b-8071-ee5908c2445b",
+    "playerEmail": "elavcohen9@gmail.com",
+    "timestamp": 1753971913440,
+    "type": "vs-player",
+    "result": "won",
+    "playerPokemon": {
+      "id": 87,
+      "name": "dewgong",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "thick-fat",
+        "hydration",
+        "ice-body"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 70,
+        "defense": 80,
+        "speed": 70
+      }
+    },
+    "opponentPokemon": {
+      "id": 124,
+      "name": "jynx",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+      "types": [
+        "ice",
+        "psychic"
+      ],
+      "abilities": [
+        "oblivious",
+        "forewarn",
+        "dry-skin"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 50,
+        "defense": 35,
+        "speed": 95
+      }
+    },
+    "playerScore": 82.94,
+    "opponentScore": 60.05,
+    "opponentName": "elavv"
+  },
+  {
+    "id": "1753973089530",
+    "playerId": "37c2417a-d95a-47fb-9bd6-588cee0198eb",
+    "playerEmail": "elavcohen8@gmail.com",
+    "timestamp": 1753973089530,
+    "type": "vs-player",
+    "result": "won",
+    "playerPokemon": {
+      "id": 87,
+      "name": "dewgong",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "thick-fat",
+        "hydration",
+        "ice-body"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 70,
+        "defense": 80,
+        "speed": 70
+      }
+    },
+    "opponentPokemon": {
+      "id": 87,
+      "name": "dewgong",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "thick-fat",
+        "hydration",
+        "ice-body"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 70,
+        "defense": 80,
+        "speed": 70
+      }
+    },
+    "playerScore": 81.24,
+    "opponentScore": 78.55,
+    "opponentName": "elav"
+  },
+  {
+    "id": "1753973099610",
+    "playerId": "37c2417a-d95a-47fb-9bd6-588cee0198eb",
+    "playerEmail": "elavcohen8@gmail.com",
+    "timestamp": 1753973099610,
+    "type": "vs-player",
+    "result": "lost",
+    "playerPokemon": {
+      "id": 87,
+      "name": "dewgong",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "thick-fat",
+        "hydration",
+        "ice-body"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 70,
+        "defense": 80,
+        "speed": 70
+      }
+    },
+    "opponentPokemon": {
+      "id": 131,
+      "name": "lapras",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "water-absorb",
+        "shell-armor",
+        "hydration"
+      ],
+      "stats": {
+        "hp": 130,
+        "attack": 85,
+        "defense": 80,
+        "speed": 60
+      }
+    },
+    "playerScore": 80.26,
+    "opponentScore": 99.76,
+    "opponentName": "elav"
+  },
+  {
+    "id": "1753973104807",
+    "playerId": "37c2417a-d95a-47fb-9bd6-588cee0198eb",
+    "playerEmail": "elavcohen8@gmail.com",
+    "timestamp": 1753973104807,
+    "type": "vs-player",
+    "result": "won",
+    "playerPokemon": {
+      "id": 91,
+      "name": "cloyster",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "shell-armor",
+        "skill-link",
+        "overcoat"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 95,
+        "defense": 180,
+        "speed": 70
+      }
+    },
+    "opponentPokemon": {
+      "id": 91,
+      "name": "cloyster",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "shell-armor",
+        "skill-link",
+        "overcoat"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 95,
+        "defense": 180,
+        "speed": 70
+      }
+    },
+    "playerScore": 97.45,
+    "opponentScore": 97.22,
+    "opponentName": "elav"
+  },
+  {
+    "id": "1753973111496",
+    "playerId": "5d6c6640-db88-4b0b-8071-ee5908c2445b",
+    "playerEmail": "elavcohen9@gmail.com",
+    "timestamp": 1753973111496,
+    "type": "vs-player",
+    "result": "lost",
+    "playerPokemon": {
+      "id": 91,
+      "name": "cloyster",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "shell-armor",
+        "skill-link",
+        "overcoat"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 95,
+        "defense": 180,
+        "speed": 70
+      }
+    },
+    "opponentPokemon": {
+      "id": 91,
+      "name": "cloyster",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "shell-armor",
+        "skill-link",
+        "overcoat"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 95,
+        "defense": 180,
+        "speed": 70
+      }
+    },
+    "playerScore": 96.85,
+    "opponentScore": 100.03,
+    "opponentName": "elavv"
+  },
+  {
+    "id": "1753973118611",
+    "playerId": "5d6c6640-db88-4b0b-8071-ee5908c2445b",
+    "playerEmail": "elavcohen9@gmail.com",
+    "timestamp": 1753973118611,
+    "type": "vs-player",
+    "result": "won",
+    "playerPokemon": {
+      "id": 131,
+      "name": "lapras",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "water-absorb",
+        "shell-armor",
+        "hydration"
+      ],
+      "stats": {
+        "hp": 130,
+        "attack": 85,
+        "defense": 80,
+        "speed": 60
+      }
+    },
+    "opponentPokemon": {
+      "id": 124,
+      "name": "jynx",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+      "types": [
+        "ice",
+        "psychic"
+      ],
+      "abilities": [
+        "oblivious",
+        "forewarn",
+        "dry-skin"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 50,
+        "defense": 35,
+        "speed": 95
+      }
+    },
+    "playerScore": 98.36,
+    "opponentScore": 60.44,
+    "opponentName": "elavv"
+  },
+  {
+    "id": "1753973147616",
+    "playerId": "5d6c6640-db88-4b0b-8071-ee5908c2445b",
+    "playerEmail": "elavcohen9@gmail.com",
+    "timestamp": 1753973147616,
+    "type": "vs-player",
+    "result": "won",
+    "playerPokemon": {
+      "id": 87,
+      "name": "dewgong",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "thick-fat",
+        "hydration",
+        "ice-body"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 70,
+        "defense": 80,
+        "speed": 70
+      }
+    },
+    "opponentPokemon": {
+      "id": 124,
+      "name": "jynx",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+      "types": [
+        "ice",
+        "psychic"
+      ],
+      "abilities": [
+        "oblivious",
+        "forewarn",
+        "dry-skin"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 50,
+        "defense": 35,
+        "speed": 95
+      }
+    },
+    "playerScore": 81.25,
+    "opponentScore": 60.14,
+    "opponentName": "elavv"
+  },
+  {
+    "id": "1753973777430",
+    "playerId": "5d6c6640-db88-4b0b-8071-ee5908c2445b",
+    "playerEmail": "elavcohen9@gmail.com",
+    "timestamp": 1753973777430,
+    "type": "vs-player",
+    "result": "won",
+    "playerPokemon": {
+      "id": 144,
+      "name": "articuno",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png",
+      "types": [
+        "ice",
+        "flying"
+      ],
+      "abilities": [
+        "pressure",
+        "snow-cloak"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 85,
+        "defense": 100,
+        "speed": 85
+      }
+    },
+    "opponentPokemon": {
+      "id": 124,
+      "name": "jynx",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+      "types": [
+        "ice",
+        "psychic"
+      ],
+      "abilities": [
+        "oblivious",
+        "forewarn",
+        "dry-skin"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 50,
+        "defense": 35,
+        "speed": 95
+      }
+    },
+    "playerScore": 90.97,
+    "opponentScore": 57.5,
+    "opponentName": "elavv"
+  },
+  {
+    "id": "1753973918446",
+    "playerId": "5d6c6640-db88-4b0b-8071-ee5908c2445b",
+    "playerEmail": "elavcohen9@gmail.com",
+    "timestamp": 1753973918446,
+    "type": "vs-player",
+    "result": "won",
+    "playerPokemon": {
+      "id": 5,
+      "name": "charmeleon",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
+      "types": [
+        "fire"
+      ],
+      "abilities": [
+        "blaze",
+        "solar-power"
+      ],
+      "stats": {
+        "hp": 58,
+        "attack": 64,
+        "defense": 58,
+        "speed": 80
+      }
+    },
+    "opponentPokemon": {
+      "id": 124,
+      "name": "jynx",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+      "types": [
+        "ice",
+        "psychic"
+      ],
+      "abilities": [
+        "oblivious",
+        "forewarn",
+        "dry-skin"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 50,
+        "defense": 35,
+        "speed": 95
+      }
+    },
+    "playerScore": 67.29,
+    "opponentScore": 60.92,
+    "opponentName": "elavv"
+  },
+  {
+    "id": "1753975137009",
+    "playerId": "37c2417a-d95a-47fb-9bd6-588cee0198eb",
+    "playerEmail": "elavcohen8@gmail.com",
+    "timestamp": 1753975137009,
+    "type": "vs-player",
+    "result": "won",
+    "playerPokemon": {
+      "id": 91,
+      "name": "cloyster",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "shell-armor",
+        "skill-link",
+        "overcoat"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 95,
+        "defense": 180,
+        "speed": 70
+      }
+    },
+    "opponentPokemon": {
+      "id": 131,
+      "name": "lapras",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "water-absorb",
+        "shell-armor",
+        "hydration"
+      ],
+      "stats": {
+        "hp": 130,
+        "attack": 85,
+        "defense": 80,
+        "speed": 60
+      }
+    },
+    "playerScore": 99.01,
+    "opponentScore": 96.16,
+    "opponentName": "elav"
+  },
+  {
+    "id": "1753975636281",
+    "playerId": "5d6c6640-db88-4b0b-8071-ee5908c2445b",
+    "playerEmail": "elavcohen9@gmail.com",
+    "timestamp": 1753975636281,
+    "type": "vs-player",
+    "result": "won",
+    "playerPokemon": {
+      "id": 124,
+      "name": "jynx",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+      "types": [
+        "ice",
+        "psychic"
+      ],
+      "abilities": [
+        "oblivious",
+        "forewarn",
+        "dry-skin"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 50,
+        "defense": 35,
+        "speed": 95
+      }
+    },
+    "opponentPokemon": {
+      "id": 124,
+      "name": "jynx",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+      "types": [
+        "ice",
+        "psychic"
+      ],
+      "abilities": [
+        "oblivious",
+        "forewarn",
+        "dry-skin"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 50,
+        "defense": 35,
+        "speed": 95
+      }
+    },
+    "playerScore": 58.77,
+    "opponentScore": 57.13,
+    "opponentName": "elavv"
+  },
+  {
+    "id": "1753975642130",
+    "playerId": "5d6c6640-db88-4b0b-8071-ee5908c2445b",
+    "playerEmail": "elavcohen9@gmail.com",
+    "timestamp": 1753975642130,
+    "type": "vs-player",
+    "result": "lost",
+    "playerPokemon": {
+      "id": 37,
+      "name": "vulpix",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png",
+      "types": [
+        "fire"
+      ],
+      "abilities": [
+        "flash-fire",
+        "drought"
+      ],
+      "stats": {
+        "hp": 38,
+        "attack": 41,
+        "defense": 40,
+        "speed": 65
+      }
+    },
+    "opponentPokemon": {
+      "id": 87,
+      "name": "dewgong",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "thick-fat",
+        "hydration",
+        "ice-body"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 70,
+        "defense": 80,
+        "speed": 70
+      }
+    },
+    "playerScore": 46.26,
+    "opponentScore": 81.76,
+    "opponentName": "elavv"
+  },
+  {
+    "id": "1753975647028",
+    "playerId": "5d6c6640-db88-4b0b-8071-ee5908c2445b",
+    "playerEmail": "elavcohen9@gmail.com",
+    "timestamp": 1753975647028,
+    "type": "vs-player",
+    "result": "lost",
+    "playerPokemon": {
+      "id": 5,
+      "name": "charmeleon",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
+      "types": [
+        "fire"
+      ],
+      "abilities": [
+        "blaze",
+        "solar-power"
+      ],
+      "stats": {
+        "hp": 58,
+        "attack": 64,
+        "defense": 58,
+        "speed": 80
+      }
+    },
+    "opponentPokemon": {
+      "id": 91,
+      "name": "cloyster",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "shell-armor",
+        "skill-link",
+        "overcoat"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 95,
+        "defense": 180,
+        "speed": 70
+      }
+    },
+    "playerScore": 67.25,
+    "opponentScore": 99.94,
+    "opponentName": "elavv"
+  },
+  {
+    "id": "1753975655409",
+    "playerId": "5d6c6640-db88-4b0b-8071-ee5908c2445b",
+    "playerEmail": "elavcohen9@gmail.com",
+    "timestamp": 1753975655409,
+    "type": "vs-player",
+    "result": "lost",
+    "playerPokemon": {
+      "id": 124,
+      "name": "jynx",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+      "types": [
+        "ice",
+        "psychic"
+      ],
+      "abilities": [
+        "oblivious",
+        "forewarn",
+        "dry-skin"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 50,
+        "defense": 35,
+        "speed": 95
+      }
+    },
+    "opponentPokemon": {
+      "id": 124,
+      "name": "jynx",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+      "types": [
+        "ice",
+        "psychic"
+      ],
+      "abilities": [
+        "oblivious",
+        "forewarn",
+        "dry-skin"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 50,
+        "defense": 35,
+        "speed": 95
+      }
+    },
+    "playerScore": 58.07,
+    "opponentScore": 60.44,
+    "opponentName": "elavv"
+  },
+  {
+    "id": "1753975661306",
+    "playerId": "5d6c6640-db88-4b0b-8071-ee5908c2445b",
+    "playerEmail": "elavcohen9@gmail.com",
+    "timestamp": 1753975661306,
+    "type": "vs-player",
+    "result": "won",
+    "playerPokemon": {
+      "id": 91,
+      "name": "cloyster",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "shell-armor",
+        "skill-link",
+        "overcoat"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 95,
+        "defense": 180,
+        "speed": 70
+      }
+    },
+    "opponentPokemon": {
+      "id": 87,
+      "name": "dewgong",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "thick-fat",
+        "hydration",
+        "ice-body"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 70,
+        "defense": 80,
+        "speed": 70
+      }
+    },
+    "playerScore": 99.11,
+    "opponentScore": 80.61,
+    "opponentName": "elavv"
+  },
+  {
+    "id": "1753975728692",
+    "playerId": "37c2417a-d95a-47fb-9bd6-588cee0198eb",
+    "playerEmail": "elavcohen8@gmail.com",
+    "timestamp": 1753975728692,
+    "type": "vs-player",
+    "result": "lost",
+    "playerPokemon": {
+      "id": 124,
+      "name": "jynx",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+      "types": [
+        "ice",
+        "psychic"
+      ],
+      "abilities": [
+        "oblivious",
+        "forewarn",
+        "dry-skin"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 50,
+        "defense": 35,
+        "speed": 95
+      }
+    },
+    "opponentPokemon": {
+      "id": 131,
+      "name": "lapras",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "water-absorb",
+        "shell-armor",
+        "hydration"
+      ],
+      "stats": {
+        "hp": 130,
+        "attack": 85,
+        "defense": 80,
+        "speed": 60
+      }
+    },
+    "playerScore": 60.76,
+    "opponentScore": 95.52,
+    "opponentName": "elav"
+  },
+  {
+    "id": "1753975735895",
+    "playerId": "37c2417a-d95a-47fb-9bd6-588cee0198eb",
+    "playerEmail": "elavcohen8@gmail.com",
+    "timestamp": 1753975735895,
+    "type": "vs-player",
+    "result": "won",
+    "playerPokemon": {
+      "id": 91,
+      "name": "cloyster",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "shell-armor",
+        "skill-link",
+        "overcoat"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 95,
+        "defense": 180,
+        "speed": 70
+      }
+    },
+    "opponentPokemon": {
+      "id": 124,
+      "name": "jynx",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+      "types": [
+        "ice",
+        "psychic"
+      ],
+      "abilities": [
+        "oblivious",
+        "forewarn",
+        "dry-skin"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 50,
+        "defense": 35,
+        "speed": 95
+      }
+    },
+    "playerScore": 98.5,
+    "opponentScore": 57.99,
+    "opponentName": "elav"
+  },
+  {
+    "id": "1753975772667",
+    "playerId": "37c2417a-d95a-47fb-9bd6-588cee0198eb",
+    "playerEmail": "elavcohen8@gmail.com",
+    "timestamp": 1753975772667,
+    "type": "vs-player",
+    "result": "won",
+    "playerPokemon": {
+      "id": 124,
+      "name": "jynx",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+      "types": [
+        "ice",
+        "psychic"
+      ],
+      "abilities": [
+        "oblivious",
+        "forewarn",
+        "dry-skin"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 50,
+        "defense": 35,
+        "speed": 95
+      }
+    },
+    "opponentPokemon": {
+      "id": 37,
+      "name": "vulpix",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png",
+      "types": [
+        "fire"
+      ],
+      "abilities": [
+        "flash-fire",
+        "drought"
+      ],
+      "stats": {
+        "hp": 38,
+        "attack": 41,
+        "defense": 40,
+        "speed": 65
+      }
+    },
+    "playerScore": 59.06,
+    "opponentScore": 45.52,
+    "opponentName": "elav"
+  },
+  {
+    "id": "1753975849574",
+    "playerId": "5d6c6640-db88-4b0b-8071-ee5908c2445b",
+    "playerEmail": "elavcohen9@gmail.com",
+    "timestamp": 1753975849574,
+    "type": "vs-player",
+    "result": "won",
+    "playerPokemon": {
+      "id": 5,
+      "name": "charmeleon",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
+      "types": [
+        "fire"
+      ],
+      "abilities": [
+        "blaze",
+        "solar-power"
+      ],
+      "stats": {
+        "hp": 58,
+        "attack": 64,
+        "defense": 58,
+        "speed": 80
+      }
+    },
+    "opponentPokemon": {
+      "id": 124,
+      "name": "jynx",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+      "types": [
+        "ice",
+        "psychic"
+      ],
+      "abilities": [
+        "oblivious",
+        "forewarn",
+        "dry-skin"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 50,
+        "defense": 35,
+        "speed": 95
+      }
+    },
+    "playerScore": 64.86,
+    "opponentScore": 58.48,
+    "opponentName": "elavv"
+  },
+  {
+    "id": "1753975855504",
+    "playerId": "5d6c6640-db88-4b0b-8071-ee5908c2445b",
+    "playerEmail": "elavcohen9@gmail.com",
+    "timestamp": 1753975855504,
+    "type": "vs-player",
+    "result": "won",
+    "playerPokemon": {
+      "id": 87,
+      "name": "dewgong",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "thick-fat",
+        "hydration",
+        "ice-body"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 70,
+        "defense": 80,
+        "speed": 70
+      }
+    },
+    "opponentPokemon": {
+      "id": 87,
+      "name": "dewgong",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "thick-fat",
+        "hydration",
+        "ice-body"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 70,
+        "defense": 80,
+        "speed": 70
+      }
+    },
+    "playerScore": 82.04,
+    "opponentScore": 81.57,
+    "opponentName": "elavv"
+  },
+  {
+    "id": "1753975858477",
+    "playerId": "5d6c6640-db88-4b0b-8071-ee5908c2445b",
+    "playerEmail": "elavcohen9@gmail.com",
+    "timestamp": 1753975858477,
+    "type": "vs-player",
+    "result": "lost",
+    "playerPokemon": {
+      "id": 124,
+      "name": "jynx",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+      "types": [
+        "ice",
+        "psychic"
+      ],
+      "abilities": [
+        "oblivious",
+        "forewarn",
+        "dry-skin"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 50,
+        "defense": 35,
+        "speed": 95
+      }
+    },
+    "opponentPokemon": {
+      "id": 91,
+      "name": "cloyster",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "shell-armor",
+        "skill-link",
+        "overcoat"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 95,
+        "defense": 180,
+        "speed": 70
+      }
+    },
+    "playerScore": 60.47,
+    "opponentScore": 100.79,
+    "opponentName": "elavv"
+  },
+  {
+    "id": "1753975864082",
+    "playerId": "5d6c6640-db88-4b0b-8071-ee5908c2445b",
+    "playerEmail": "elavcohen9@gmail.com",
+    "timestamp": 1753975864082,
+    "type": "vs-player",
+    "result": "lost",
+    "playerPokemon": {
+      "id": 4,
+      "name": "charmander",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+      "types": [
+        "fire"
+      ],
+      "abilities": [
+        "blaze",
+        "solar-power"
+      ],
+      "stats": {
+        "hp": 39,
+        "attack": 52,
+        "defense": 43,
+        "speed": 65
+      }
+    },
+    "opponentPokemon": {
+      "id": 87,
+      "name": "dewgong",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "thick-fat",
+        "hydration",
+        "ice-body"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 70,
+        "defense": 80,
+        "speed": 70
+      }
+    },
+    "playerScore": 52.12,
+    "opponentScore": 79.71,
+    "opponentName": "elavv"
+  },
+  {
+    "id": "1753975869531",
+    "playerId": "5d6c6640-db88-4b0b-8071-ee5908c2445b",
+    "playerEmail": "elavcohen9@gmail.com",
+    "timestamp": 1753975869531,
+    "type": "vs-player",
+    "result": "lost",
+    "playerPokemon": {
+      "id": 37,
+      "name": "vulpix",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png",
+      "types": [
+        "fire"
+      ],
+      "abilities": [
+        "flash-fire",
+        "drought"
+      ],
+      "stats": {
+        "hp": 38,
+        "attack": 41,
+        "defense": 40,
+        "speed": 65
+      }
+    },
+    "opponentPokemon": {
+      "id": 87,
+      "name": "dewgong",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "thick-fat",
+        "hydration",
+        "ice-body"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 70,
+        "defense": 80,
+        "speed": 70
+      }
+    },
+    "playerScore": 46.48,
+    "opponentScore": 82.21,
+    "opponentName": "elavv"
+  },
+  {
+    "id": "1753975883090",
+    "playerId": "37c2417a-d95a-47fb-9bd6-588cee0198eb",
+    "playerEmail": "elavcohen8@gmail.com",
+    "timestamp": 1753975883090,
+    "type": "vs-player",
+    "result": "lost",
+    "playerPokemon": {
+      "id": 91,
+      "name": "cloyster",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "shell-armor",
+        "skill-link",
+        "overcoat"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 95,
+        "defense": 180,
+        "speed": 70
+      }
+    },
+    "opponentPokemon": {
+      "id": 91,
+      "name": "cloyster",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "shell-armor",
+        "skill-link",
+        "overcoat"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 95,
+        "defense": 180,
+        "speed": 70
+      }
+    },
+    "playerScore": 98.83,
+    "opponentScore": 99.24,
+    "opponentName": "elav"
+  },
+  {
+    "id": "1753975889485",
+    "playerId": "37c2417a-d95a-47fb-9bd6-588cee0198eb",
+    "playerEmail": "elavcohen8@gmail.com",
+    "timestamp": 1753975889485,
+    "type": "vs-player",
+    "result": "won",
+    "playerPokemon": {
+      "id": 91,
+      "name": "cloyster",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "shell-armor",
+        "skill-link",
+        "overcoat"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 95,
+        "defense": 180,
+        "speed": 70
+      }
+    },
+    "opponentPokemon": {
+      "id": 87,
+      "name": "dewgong",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "thick-fat",
+        "hydration",
+        "ice-body"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 70,
+        "defense": 80,
+        "speed": 70
+      }
+    },
+    "playerScore": 98.99,
+    "opponentScore": 81.93,
+    "opponentName": "elav"
+  },
+  {
+    "id": "1753975897875",
+    "playerId": "37c2417a-d95a-47fb-9bd6-588cee0198eb",
+    "playerEmail": "elavcohen8@gmail.com",
+    "timestamp": 1753975897875,
+    "type": "vs-player",
+    "result": "won",
+    "playerPokemon": {
+      "id": 91,
+      "name": "cloyster",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "shell-armor",
+        "skill-link",
+        "overcoat"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 95,
+        "defense": 180,
+        "speed": 70
+      }
+    },
+    "opponentPokemon": {
+      "id": 124,
+      "name": "jynx",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+      "types": [
+        "ice",
+        "psychic"
+      ],
+      "abilities": [
+        "oblivious",
+        "forewarn",
+        "dry-skin"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 50,
+        "defense": 35,
+        "speed": 95
+      }
+    },
+    "playerScore": 97.11,
+    "opponentScore": 57.98,
+    "opponentName": "elav"
+  },
+  {
+    "id": "1754599590522",
+    "playerId": "37c2417a-d95a-47fb-9bd6-588cee0198eb",
+    "playerEmail": "elavcohen8@gmail.com",
+    "timestamp": 1754599590522,
+    "type": "vs-player",
+    "result": "won",
+    "playerPokemon": {
+      "id": 593,
+      "name": "jellicent",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/593.png",
+      "types": [
+        "water",
+        "ghost"
+      ],
+      "abilities": [
+        "water-absorb",
+        "cursed-body",
+        "damp"
+      ],
+      "stats": {
+        "hp": 100,
+        "attack": 60,
+        "defense": 70,
+        "speed": 60
+      }
+    },
+    "opponentPokemon": {
+      "id": 378,
+      "name": "regice",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/378.png",
+      "types": [
+        "ice"
+      ],
+      "abilities": [
+        "clear-body",
+        "ice-body"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 50,
+        "defense": 100,
+        "speed": 50
+      }
+    },
+    "playerScore": 74.2,
+    "opponentScore": 69.83,
+    "opponentName": "elav"
+  },
+  {
+    "id": "1754599597767",
+    "playerId": "37c2417a-d95a-47fb-9bd6-588cee0198eb",
+    "playerEmail": "elavcohen8@gmail.com",
+    "timestamp": 1754599597767,
+    "type": "vs-player",
+    "result": "won",
+    "playerPokemon": {
+      "id": 378,
+      "name": "regice",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/378.png",
+      "types": [
+        "ice"
+      ],
+      "abilities": [
+        "clear-body",
+        "ice-body"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 50,
+        "defense": 100,
+        "speed": 50
+      }
+    },
+    "opponentPokemon": {
+      "id": 378,
+      "name": "regice",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/378.png",
+      "types": [
+        "ice"
+      ],
+      "abilities": [
+        "clear-body",
+        "ice-body"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 50,
+        "defense": 100,
+        "speed": 50
+      }
+    },
+    "playerScore": 72.32,
+    "opponentScore": 69.47,
+    "opponentName": "elav"
+  },
+  {
+    "id": "1754599746173",
+    "playerId": "920f6faf-3acc-4e61-8719-3aae5939035b",
+    "playerEmail": "elavcohen7@gmail.com",
+    "timestamp": 1754599746173,
+    "type": "vs-player",
+    "result": "won",
+    "playerPokemon": {
+      "id": 131,
+      "name": "lapras",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "water-absorb",
+        "shell-armor",
+        "hydration"
+      ],
+      "stats": {
+        "hp": 130,
+        "attack": 85,
+        "defense": 80,
+        "speed": 60
+      }
+    },
+    "opponentPokemon": {
+      "id": 124,
+      "name": "jynx",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+      "types": [
+        "ice",
+        "psychic"
+      ],
+      "abilities": [
+        "oblivious",
+        "forewarn",
+        "dry-skin"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 50,
+        "defense": 35,
+        "speed": 95
+      }
+    },
+    "playerScore": 96.61,
+    "opponentScore": 56.54,
+    "opponentName": "elavv"
+  },
+  {
+    "id": "1754599754760",
+    "playerId": "920f6faf-3acc-4e61-8719-3aae5939035b",
+    "playerEmail": "elavcohen7@gmail.com",
+    "timestamp": 1754599754760,
+    "type": "vs-player",
+    "result": "lost",
+    "playerPokemon": {
+      "id": 4,
+      "name": "charmander",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+      "types": [
+        "fire"
+      ],
+      "abilities": [
+        "blaze",
+        "solar-power"
+      ],
+      "stats": {
+        "hp": 39,
+        "attack": 52,
+        "defense": 43,
+        "speed": 65
+      }
+    },
+    "opponentPokemon": {
+      "id": 124,
+      "name": "jynx",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+      "types": [
+        "ice",
+        "psychic"
+      ],
+      "abilities": [
+        "oblivious",
+        "forewarn",
+        "dry-skin"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 50,
+        "defense": 35,
+        "speed": 95
+      }
+    },
+    "playerScore": 50.92,
+    "opponentScore": 58.2,
+    "opponentName": "elavv"
+  },
+  {
+    "id": "1754599762691",
+    "playerId": "37c2417a-d95a-47fb-9bd6-588cee0198eb",
+    "playerEmail": "elavcohen8@gmail.com",
+    "timestamp": 1754599762691,
+    "type": "vs-player",
+    "result": "won",
+    "playerPokemon": {
+      "id": 131,
+      "name": "lapras",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "water-absorb",
+        "shell-armor",
+        "hydration"
+      ],
+      "stats": {
+        "hp": 130,
+        "attack": 85,
+        "defense": 80,
+        "speed": 60
+      }
+    },
+    "opponentPokemon": {
+      "id": 593,
+      "name": "jellicent",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/593.png",
+      "types": [
+        "water",
+        "ghost"
+      ],
+      "abilities": [
+        "water-absorb",
+        "cursed-body",
+        "damp"
+      ],
+      "stats": {
+        "hp": 100,
+        "attack": 60,
+        "defense": 70,
+        "speed": 60
+      }
+    },
+    "playerScore": 97.67,
+    "opponentScore": 78.67,
+    "opponentName": "elav"
+  },
+  {
+    "id": "1754599770217",
+    "playerId": "37c2417a-d95a-47fb-9bd6-588cee0198eb",
+    "playerEmail": "elavcohen8@gmail.com",
+    "timestamp": 1754599770217,
+    "type": "vs-player",
+    "result": "lost",
+    "playerPokemon": {
+      "id": 87,
+      "name": "dewgong",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "abilities": [
+        "thick-fat",
+        "hydration",
+        "ice-body"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 70,
+        "defense": 80,
+        "speed": 70
+      }
+    },
+    "opponentPokemon": {
+      "id": 875,
+      "name": "eiscue-ice",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/875.png",
+      "types": [
+        "ice"
+      ],
+      "abilities": [
+        "ice-face"
+      ],
+      "stats": {
+        "hp": 75,
+        "attack": 80,
+        "defense": 110,
+        "speed": 50
+      }
+    },
+    "playerScore": 78,
+    "opponentScore": 84.15,
+    "opponentName": "elav"
+  },
+  {
+    "id": "1754600112104",
+    "playerId": "37c2417a-d95a-47fb-9bd6-588cee0198eb",
+    "playerEmail": "elavcohen8@gmail.com",
+    "timestamp": 1754600112104,
+    "type": "vs-player",
+    "result": "won",
+    "playerPokemon": {
+      "id": 215,
+      "name": "sneasel",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/215.png",
+      "types": [
+        "dark",
+        "ice"
+      ],
+      "abilities": [
+        "inner-focus",
+        "keen-eye",
+        "pickpocket"
+      ],
+      "stats": {
+        "hp": 55,
+        "attack": 95,
+        "defense": 55,
+        "speed": 115
+      }
+    },
+    "opponentPokemon": {
+      "id": 593,
+      "name": "jellicent",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/593.png",
+      "types": [
+        "water",
+        "ghost"
+      ],
+      "abilities": [
+        "water-absorb",
+        "cursed-body",
+        "damp"
+      ],
+      "stats": {
+        "hp": 100,
+        "attack": 60,
+        "defense": 70,
+        "speed": 60
+      }
+    },
+    "playerScore": 80.63,
+    "opponentScore": 77.04,
+    "opponentName": "elav"
+  },
+  {
+    "id": "1754600119286",
+    "playerId": "37c2417a-d95a-47fb-9bd6-588cee0198eb",
+    "playerEmail": "elavcohen8@gmail.com",
+    "timestamp": 1754600119286,
+    "type": "vs-player",
+    "result": "won",
+    "playerPokemon": {
+      "id": 362,
+      "name": "glalie",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/362.png",
+      "types": [
+        "ice"
+      ],
+      "abilities": [
+        "inner-focus",
+        "ice-body",
+        "moody"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 80
+      }
+    },
+    "opponentPokemon": {
+      "id": 875,
+      "name": "eiscue-ice",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/875.png",
+      "types": [
+        "ice"
+      ],
+      "abilities": [
+        "ice-face"
+      ],
+      "stats": {
+        "hp": 75,
+        "attack": 80,
+        "defense": 110,
+        "speed": 50
+      }
+    },
+    "playerScore": 83.95,
+    "opponentScore": 81.92,
+    "opponentName": "elav"
+  },
+  {
+    "id": "1754600184565",
+    "playerId": "920f6faf-3acc-4e61-8719-3aae5939035b",
+    "playerEmail": "elavcohen7@gmail.com",
+    "timestamp": 1754600184565,
+    "type": "vs-player",
+    "result": "lost",
+    "playerPokemon": {
+      "id": 593,
+      "name": "jellicent",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/593.png",
+      "types": [
+        "water",
+        "ghost"
+      ],
+      "abilities": [
+        "water-absorb",
+        "cursed-body",
+        "damp"
+      ],
+      "stats": {
+        "hp": 100,
+        "attack": 60,
+        "defense": 70,
+        "speed": 60
+      }
+    },
+    "opponentPokemon": {
+      "id": 362,
+      "name": "glalie",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/362.png",
+      "types": [
+        "ice"
+      ],
+      "abilities": [
+        "inner-focus",
+        "ice-body",
+        "moody"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 80
+      }
+    },
+    "playerScore": 77.88,
+    "opponentScore": 84.58,
+    "opponentName": "elavv"
+  },
+  {
+    "id": "1754600191326",
+    "playerId": "37c2417a-d95a-47fb-9bd6-588cee0198eb",
+    "playerEmail": "elavcohen8@gmail.com",
+    "timestamp": 1754600191326,
+    "type": "vs-player",
+    "result": "won",
+    "playerPokemon": {
+      "id": 215,
+      "name": "sneasel",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/215.png",
+      "types": [
+        "dark",
+        "ice"
+      ],
+      "abilities": [
+        "inner-focus",
+        "keen-eye",
+        "pickpocket"
+      ],
+      "stats": {
+        "hp": 55,
+        "attack": 95,
+        "defense": 55,
+        "speed": 115
+      }
+    },
+    "opponentPokemon": {
+      "id": 5,
+      "name": "charmeleon",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
+      "types": [
+        "fire"
+      ],
+      "abilities": [
+        "blaze",
+        "solar-power"
+      ],
+      "stats": {
+        "hp": 58,
+        "attack": 64,
+        "defense": 58,
+        "speed": 80
+      }
+    },
+    "playerScore": 81.4,
+    "opponentScore": 66.64,
+    "opponentName": "elav"
+  },
+  {
+    "id": "1754600259166",
+    "playerId": "37c2417a-d95a-47fb-9bd6-588cee0198eb",
+    "playerEmail": "elavcohen8@gmail.com",
+    "timestamp": 1754600259166,
+    "type": "vs-player",
+    "result": "lost",
+    "playerPokemon": {
+      "id": 124,
+      "name": "jynx",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+      "types": [
+        "ice",
+        "psychic"
+      ],
+      "abilities": [
+        "oblivious",
+        "forewarn",
+        "dry-skin"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 50,
+        "defense": 35,
+        "speed": 95
+      }
+    },
+    "opponentPokemon": {
+      "id": 378,
+      "name": "regice",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/378.png",
+      "types": [
+        "ice"
+      ],
+      "abilities": [
+        "clear-body",
+        "ice-body"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 50,
+        "defense": 100,
+        "speed": 50
+      }
+    },
+    "playerScore": 58.06,
+    "opponentScore": 72.62,
+    "opponentName": "elav"
+  }
+]

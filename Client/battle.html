@@ -1,0 +1,48 @@
+<!-- battle page - lets user fight bot with their pokemon -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Battle Arena</title>
+
+  <link rel="stylesheet" href="pokemon.css"/>
+  <link rel="stylesheet" href="battle.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- user auth header with logout -->
+  <header class="site-header">
+    <div id="user-info">loading user…</div>
+    <a href="/logout" class="logout-btn">logout</a>
+  </header>
+
+  <!-- main battle container -->
+  <div class="battle-container">
+    <!-- nav buttons for user flow -->
+    <button id="back-btn" class="nav-btn">back</button>
+    <button id="back-to-search-btn" class="nav-btn">back to search</button>
+
+    <h1 class="battle-title">battle arena</h1>
+
+    <!-- area for player and bot pokemon cards -->
+    <div class="battle-area">
+      <div id="player-card" class="pokemon-card"></div>
+      <div id="bot-card"    class="pokemon-card"></div>
+    </div>
+
+    <!-- battle action buttons -->
+    <button id="fight-btn">start battle</button>
+    <button id="rematch-btn" class="nav-btn" style="display:none;">rematch</button>
+
+    <!-- countdown and result display -->
+    <div id="countdown" class="countdown"></div>
+    <div id="result"    class="result"></div>
+    <audio id="battle-end-sound" src="sounds/sound.wav"></audio>
+
+  </div>
+
+  <!-- battle logic script -->
+  <script src="battle.js"></script>
+</body>
+</html>

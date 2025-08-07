@@ -1,0 +1,70 @@
+<!-- random vs player page - player vs player battle matchmaking -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Random Battle vs Player</title>
+  <link rel="stylesheet" href="/arena/random-vs-player.css"/>
+</head>
+<body>
+  <!-- main arena container -->
+  <div class="arena-container">
+    <!-- header with back button and title -->
+    <div class="header-section">
+      <button class="back-to-arena-btn" onclick="window.location.href='/arena'">← back to arena</button>
+      <h1 class="arena-title">random battle vs player</h1>
+    </div>
+    <!-- opponent selection section -->
+    <div id="players-section">
+      <div class="players-header">
+        <h2>choose opponent:</h2>
+        <button id="refresh-players-btn" class="refresh-btn">🔄 refresh players</button>
+      </div>
+      <div id="players-list" class="players-list">loading players…</div>
+    </div>
+    <!-- battle interface section -->
+    <div id="battle-section" class="battle-container" style="display:none;">
+      <div id="timer" class="battle-timer"></div>
+      <div id="battle-field" class="battle-field"></div>
+      <button id="start-battle-btn" class="battle-btn">start battle</button>
+      <button id="rematch-btn" class="battle-btn" style="display: none;">rematch</button>
+      <button id="back-btn" class="back-btn">back to opponents</button>
+    </div>
+    <!-- battle rules and explanation -->
+    <div class="rules-section">
+      <h3>how does it work?</h3>
+      <ul>
+        <li>see all <b>online</b> players (except yourself) and challenge one to a random battle.</li>
+        <li>each player's pokemon is chosen randomly from their favorites.</li>
+        <li>battle score is calculated:<br>
+          <b>total score = hp × 0.3 + attack × 0.4 + defense × 0.2 + speed × 0.1 + small random</b>
+        </li>
+        <li>countdown 3...2...1, then the winner is shown with a crown.</li>
+        <li>both pokemon stats and scores are displayed.</li>
+      </ul>
+      <div class="example">
+        <b>example:</b><br>
+        pikachu (hp=60, attack=55, defense=40, speed=90)<br>
+        base score = 60×0.3 + 55×0.4 + 40×0.2 + 90×0.1 = <b>55.5</b><br>
+        random bonus = 2.3<br>
+        final score = <b>57.8</b>
+      </div>
+    </div>
+  </div>
+  <!-- utility and battle logic scripts -->
+  <script src="/utils.js"></script>
+  <script src="/arena/random-vs-player.js"></script>
+  
+  <!-- user online status management -->
+  <script>
+    // mark user offline when page closes
+    window.addEventListener('beforeunload', function() {
+      // send sync request to mark user offline
+      const xhr = new XMLHttpRequest();
+      xhr.open('POST', '/api/offline', false); // sync request
+      xhr.setRequestHeader('Content-Type', 'application/json');
+      xhr.send();
+    });
+  </script>
+</body>
+</html>

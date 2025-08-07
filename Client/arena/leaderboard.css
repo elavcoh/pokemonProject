@@ -1,0 +1,333 @@
+/* leaderboard page stylesheet */
+/* controls leaderboard table layout, rankings, and player stats display */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-image: url('https://wallpapercave.com/uwp/uwp4775786.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.leaderboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-section {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.back-to-arena-btn {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(45deg, #6c757d, #495057);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  pointer-events: auto;
+  z-index: 100;
+}
+
+.back-to-arena-btn:hover {
+  background: linear-gradient(45deg, #495057, #6c757d);
+  transform: translateY(-50%) scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.leaderboard-title {
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2.5rem;
+  color: #FFCB05;
+  text-shadow:
+    -2px 0 #2A75BB,
+     0 2px #2A75BB,
+     2px 0 #2A75BB,
+     0 -2px #2A75BB;
+  margin-bottom: 30px;
+  font-weight: bold;
+  position: relative;
+  z-index: 10;
+}
+
+.info-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  backdrop-filter: blur(10px);
+}
+
+.scoring-info h3 {
+  color: #2a75bb;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.scoring-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.scoring-info li {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.win-text {
+  color: #28a745;
+}
+
+.tie-text {
+  color: #6c757d;
+}
+
+.loss-text {
+  color: #dc3545;
+}
+
+.requirement-text {
+  margin-top: 15px;
+  padding: 10px;
+  background: rgba(42, 117, 187, 0.1);
+  border-radius: 8px;
+  border-left: 4px solid #2a75bb;
+  font-size: 0.9em;
+  color: #2a75bb;
+}
+
+#refresh-btn {
+  background: linear-gradient(135deg, #ffcb05 0%, #f5b700 100%);
+  border: 2px solid #2a75bb;
+  color: #2a75bb;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(42, 117, 187, 0.2);
+}
+
+#refresh-btn:hover {
+  background: linear-gradient(135deg, #2a75bb 0%, #1e5aa8 100%);
+  color: #ffcb05;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(42, 117, 187, 0.4);
+  border-color: #ffcb05;
+}
+
+.loading-message {
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.2em;
+  margin: 40px 0;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+.leaderboard-table {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  backdrop-filter: blur(10px);
+}
+
+.leaderboard-header {
+  background: linear-gradient(135deg, #2a75bb 0%, #1e5aa8 100%);
+  color: white;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 80px 2fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.leaderboard-header div {
+  font-size: 1.1em;
+}
+
+.leaderboard-row {
+  display: grid;
+  grid-template-columns: 80px 2fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 15px;
+  padding: 15px 20px;
+  border-bottom: 1px solid #f0f0f0;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.leaderboard-row:hover {
+  background: rgba(42, 117, 187, 0.1);
+  transform: translateX(5px);
+}
+
+.leaderboard-row.current-user {
+  background: linear-gradient(135deg, rgba(255, 203, 5, 0.2) 0%, rgba(42, 117, 187, 0.2) 100%);
+  border-left: 4px solid #ffcb05;
+  font-weight: bold;
+}
+
+.rank {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #2a75bb;
+}
+
+.rank.rank-1 {
+  color: #ffd700;
+}
+
+.rank.rank-2 {
+  color: #c0c0c0;
+}
+
+.rank.rank-3 {
+  color: #cd7f32;
+}
+
+.username {
+  font-weight: bold;
+  color: #2a75bb;
+  text-align: left;
+}
+
+.total-score {
+  font-weight: bold;
+  color: #28a745;
+  font-size: 1.1em;
+}
+
+.wins {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.losses {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.total-battles {
+  color: #6c757d;
+  font-weight: bold;
+}
+
+.success-rate {
+  font-weight: bold;
+}
+
+.success-rate.high {
+  color: #28a745;
+}
+
+.success-rate.medium {
+  color: #ffc107;
+}
+
+.success-rate.low {
+  color: #dc3545;
+}
+
+.no-players-message {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  backdrop-filter: blur(10px);
+}
+
+.no-players-message h3 {
+  color: #2a75bb;
+  margin-bottom: 10px;
+}
+
+.no-players-message p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.start-battle-btn {
+  background: linear-gradient(135deg, #ffcb05 0%, #f5b700 100%);
+  border: 2px solid #2a75bb;
+  color: #2a75bb;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(42, 117, 187, 0.2);
+}
+
+.start-battle-btn:hover {
+  background: linear-gradient(135deg, #2a75bb 0%, #1e5aa8 100%);
+  color: #ffcb05;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(42, 117, 187, 0.4);
+  border-color: #ffcb05;
+}
+
+@media (max-width: 768px) {
+  .header-section {
+    text-align: center;
+  }
+  
+  .back-to-arena-btn {
+    position: static;
+    transform: none;
+    margin-bottom: 15px;
+    display: inline-block;
+  }
+  
+  .back-to-arena-btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .leaderboard-title {
+    font-size: 2em;
+  }
+  
+  .info-section {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .leaderboard-header,
+  .leaderboard-row {
+    grid-template-columns: 60px 1fr 1fr;
+    gap: 10px;
+    font-size: 0.9em;
+  }
+  
+  .leaderboard-header div:nth-child(n+4),
+  .leaderboard-row div:nth-child(n+4) {
+    display: none;
+  }
+} 

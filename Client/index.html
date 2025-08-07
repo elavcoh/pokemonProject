@@ -1,0 +1,106 @@
+<!-- main pokemon search page - lets users search, view, manage pokemon -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>pokemon search</title>
+  <link rel="stylesheet" href="pokemon.css" />
+</head>
+<body>
+  <!-- user auth header with logout functionality -->
+  <header style="display: flex; justify-content: space-between; align-items: center; padding: 10px; background: #ffcb05;">
+    <div id="user-info">Loading user...</div>
+    <a id="logout-button"
+       href="/logout"
+       style="background: #2a75bb; color: #fff; padding: 8px 12px; border-radius: 4px; text-decoration: none;">
+      Logout
+    </a>
+  </header>
+
+  <!-- loading animation shown while pokemon data loads -->
+  <div id="loading-screen">
+    <img src="image/loading.gif" alt="loading" class="loading-icon" />
+  </div>
+
+
+
+  <!-- main search interface -->
+  <div class="search-container">
+    <h1>pokemon search</h1>
+    <div class="search-controls">
+      <input type="text" id="pokemon-input" placeholder="enter your search..." />
+      <select id="search-type">
+        <option value="name">name</option>
+        <option value="id">id</option>
+        <option value="type">type</option>
+        <option value="ability">ability</option>
+      </select>
+      <button id="search-button">Search</button>
+      <button id="clear-button">Clear</button>
+      <!-- arena nav button with consistent styling -->
+      <button id="arena-button" onclick="window.location.href='arena'">Arena</button>
+    </div>
+    <div id="error-message" class="error-message"></div>
+  </div>
+
+  <!-- favorites nav button with search state preservation -->
+  <a href="favorites" id="go-to-favorites" class="favorites-button">go to favorites</a>
+
+  <!-- grid container for showing pokemon search results -->
+  <div id="pokemon-container" class="pokemon-grid"></div>
+
+  <!-- hidden favorites page section (unused in current implementation) -->
+  <div id="favorites-page" class="favorites-page" style="display: none;">
+    <h2>your favorites</h2>
+    <div id="favorites-container"></div>
+  </div>
+
+  <!-- preserve search state when going to favorites page -->
+  <script>
+    document.getElementById("go-to-favorites").addEventListener("click", function () {
+      const input = document.getElementById("pokemon-input");
+      const searchType = document.getElementById("search-type");
+
+      sessionStorage.setItem("savedSearch", input?.value || "");
+      sessionStorage.setItem("savedFilter", searchType?.value || "");
+    });
+  </script>
+
+  <!-- user auth check and display -->
+  <script>
+    fetch('/api/me')
+      .then(res => {
+        if (!res.ok) throw new Error('not logged in');
+        return res.json();
+      })
+      .then(user => {
+        document.getElementById('user-info').textContent =
+          'logged in as ' + user.firstName;
+      })
+      .catch(() => {
+        // if not logged in, redirect to login page
+        window.location.href = '/login';
+      });
+  </script>
+
+  <!-- youtube api config for video integration -->
+  <script>
+    window.YOUTUBE_API_KEY = 'AIzaSyAwE8dzVs5YAPY1crR99bnp7Rk0g4lamtM';
+  </script>
+  <script src="utils.js"></script>
+  <script src="pokemon.js"></script>
+  
+  <!-- user online status management -->
+  <script>
+    // mark user offline when page closes
+    window.addEventListener('beforeunload', function() {
+      // send sync request to mark user offline
+      const xhr = new XMLHttpRequest();
+      xhr.open('POST', '/api/offline', false); // sync request
+      xhr.setRequestHeader('Content-Type', 'application/json');
+      xhr.send();
+    });
+  </script>
+</body>
+</html>

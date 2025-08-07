@@ -1,0 +1,302 @@
+<!-- login page - user authentication form -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pokémon Trainer Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-image: url('https://wallpapercave.com/uwp/uwp4775786.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .login-container {
+      max-width: 400px;
+      width: 100%;
+      padding: 40px 30px;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+      backdrop-filter: blur(10px);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .login-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #FFCB05 0%, #2A75BB 50%, #FFCB05 100%);
+    }
+
+    .login-title {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 1.8rem;
+      color: #FFCB05;
+      text-shadow: 
+        -2px 0 #2A75BB,
+         0 2px #2A75BB,
+         2px 0 #2A75BB,
+         0 -2px #2A75BB;
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    .login-title::after {
+      content: '⚡';
+      position: absolute;
+      right: -30px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.2rem;
+      animation: sparkle 2s infinite;
+    }
+
+    @keyframes sparkle {
+      0%, 100% { opacity: 1; transform: translateY(-50%) scale(1); }
+      50% { opacity: 0.7; transform: translateY(-50%) scale(1.2); }
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 15px 20px;
+      border: 2px solid #2A75BB;
+      border-radius: 25px;
+      font-size: 16px;
+      background: rgba(255, 255, 255, 0.9);
+      transition: all 0.3s ease;
+      box-sizing: border-box;
+    }
+
+    .form-group input:focus {
+      outline: none;
+      border-color: #FFCB05;
+      box-shadow: 0 0 15px rgba(255, 203, 5, 0.3);
+      transform: scale(1.02);
+    }
+
+    .form-group input::placeholder {
+      color: #666;
+      font-style: italic;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 15px;
+      background: linear-gradient(135deg, #FFCB05 0%, #F5B700 100%);
+      border: 3px solid #2A75BB;
+      color: #2A75BB;
+      border-radius: 25px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .login-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+      transition: left 0.5s;
+    }
+
+    .login-btn:hover {
+      background: linear-gradient(135deg, #2A75BB 0%, #1E5AA8 100%);
+      color: #FFCB05;
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 8px 25px rgba(42, 117, 187, 0.4);
+      border-color: #FFCB05;
+    }
+
+    .login-btn:hover::before {
+      left: 100%;
+    }
+
+    .login-btn:active {
+      transform: translateY(0) scale(0.98);
+    }
+
+    .links-section {
+      margin-top: 25px;
+      padding-top: 20px;
+      border-top: 2px solid rgba(42, 117, 187, 0.2);
+    }
+
+    .links-section p {
+      margin: 10px 0;
+      color: #2A75BB;
+      font-weight: 500;
+    }
+
+    .links-section a {
+      color: #FFCB05;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .links-section a::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #2A75BB;
+      transition: width 0.3s ease;
+    }
+
+    .links-section a:hover {
+      color: #2A75BB;
+    }
+
+    .links-section a:hover::after {
+      width: 100%;
+    }
+
+    .home-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 8px 15px;
+      background: rgba(42, 117, 187, 0.1);
+      border-radius: 15px;
+      border: 1px solid #2A75BB;
+      transition: all 0.3s ease;
+    }
+
+    .home-link:hover {
+      background: rgba(42, 117, 187, 0.2);
+      transform: translateX(-3px);
+    }
+
+    .pokemon-decoration {
+      position: absolute;
+      font-size: 2rem;
+      opacity: 0.1;
+      pointer-events: none;
+    }
+
+    .pokemon-decoration:nth-child(1) {
+      top: 20px;
+      left: 20px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .pokemon-decoration:nth-child(2) {
+      bottom: 20px;
+      right: 20px;
+      animation: float 3s ease-in-out infinite reverse;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .error-message {
+      background: rgba(220, 53, 69, 0.1);
+      border: 2px solid #dc3545;
+      color: #dc3545;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 480px) {
+      .login-container {
+        margin: 20px;
+        padding: 30px 20px;
+      }
+      
+      .login-title {
+        font-size: 1.4rem;
+      }
+      
+      .pokemon-decoration {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="pokemon-decoration">⚡</div>
+    <div class="pokemon-decoration">🔥</div>
+    
+    <h1 class="login-title">Trainer Login</h1>
+    
+    <div id="error-message" class="error-message" style="display: none;">
+      <span id="error-text"></span>
+    </div>
+    
+    <form action="/login" method="POST">
+      <div class="form-group">
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your trainer email"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter your password"
+          required
+        />
+      </div>
+      <button type="submit" class="login-btn">Start Adventure!</button>
+    </form>
+    
+    <div class="links-section">
+      <p>New trainer? <a href="/register">Join the journey!</a></p>
+      <p><a href="/" class="home-link">🏠 Back to Home</a></p>
+    </div>
+  </div>
+
+  <script>
+    // Check for error in URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const error = urlParams.get('error');
+    
+    if (error) {
+      const errorMessage = document.getElementById('error-message');
+      const errorText = document.getElementById('error-text');
+      errorText.textContent = decodeURIComponent(error);
+      errorMessage.style.display = 'block';
+    }
+  </script>
+</body>
+</html>

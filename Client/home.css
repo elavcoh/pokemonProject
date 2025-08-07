@@ -1,0 +1,73 @@
+/* home page stylesheet */
+/* controls welcome page layout and styling */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ffcb05, #2a75bb);
+  color: #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+h1 {
+  color: #2a75bb;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px #ffcb05;
+}
+
+.description {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.developers {
+  margin: 25px 0;
+  text-align: left;
+  background: #f7f7f7;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 6px solid #ffcb05;
+}
+
+.developers h2 {
+  margin-top: 0;
+  color: #2a75bb;
+}
+
+.button-container {
+  margin-top: 25px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn {
+  background: #ffcb05;
+  color: #2a75bb;
+  font-weight: bold;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background: #2a75bb;
+  color: white;
+  transform: scale(1.05);
+}

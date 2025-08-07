@@ -1,0 +1,40 @@
+<!-- bot battle page - lets users pick pokemon and battle against ai -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Battle vs Bot</title>
+
+  <!-- global pokemon styles -->
+  <link rel="stylesheet" href="/pokemon.css" />
+  <!-- page specific styles (relative path!) -->
+  <link rel="stylesheet" href="vs-bot.css" />
+
+  <!-- pixel font -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- user auth header with logout option -->
+  <header class="site-header">
+    <div>logged in as <span id="user-name"></span></div>
+    <a class="logout-btn" href="/logout">logout</a>
+  </header>
+
+  <!-- main bot battle interface -->
+  <main class="vs-bot-container">
+    <!-- nav buttons for user flow -->
+    <button id="back-btn" class="nav-btn">back</button>
+    <button id="back-to-search-btn" class="nav-btn">back to search</button>
+    <!-- battle setup section -->
+    <h1 class="vs-bot-title">choose your pokemon</h1>
+    <!-- grid showing user's favorite pokemon for selection -->
+    <div id="favorites-list" class="pokemon-grid"></div>
+    <!-- battle start button - enabled after pokemon picked -->
+    <button id="start-battle-btn">start battle</button>
+  </main>
+
+  <!-- bot battle logic and interaction handling -->
+  <script src="/arena/vs-bot.js"></script>
+</body>
+</html>

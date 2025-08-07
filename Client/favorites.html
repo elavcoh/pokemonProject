@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Favorites</title>
+  <link rel="stylesheet" href="/pokemon.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-image: url('https://wallpapercave.com/uwp/uwp4775786.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    header {
+      background: #ffcb05;
+      color: #2a75bb;
+      padding: 12px;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    header #user-info { font-weight: bold; }
+    header a {
+      background: linear-gradient(135deg, #2a75bb 0%, #1e5aa0 100%);
+      color: #ffcb05;
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      border: 2px solid #ffcb05;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    header a:hover {
+      background: linear-gradient(135deg, #1e5aa0 0%, #2a75bb 100%);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    .controls {
+      display: flex; align-items: center;
+      gap: 12px; margin: 16px 20px;
+      flex-wrap: wrap;
+    }
+    .controls button {
+      background: linear-gradient(135deg, #ffcb05 0%, #f5b700 100%);
+      border: 3px solid #2a75bb;
+      border-radius: 12px;
+      padding: 10px 16px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #2a75bb;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      box-shadow: 0 4px 8px rgba(42, 117, 187, 0.3);
+      transition: all 0.3s ease;
+      font-family: 'Press Start 2P', cursive;
+    }
+    .controls button:hover {
+      background: linear-gradient(135deg, #f5b700 0%, #ffcb05 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(42, 117, 187, 0.4);
+    }
+    .controls button:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 4px rgba(42, 117, 187, 0.3);
+    }
+    .controls select {
+      background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+      border: 3px solid #2a75bb;
+      border-radius: 8px;
+      padding: 8px 12px;
+      font-size: 14px;
+      cursor: pointer;
+      color: #2a75bb;
+      font-weight: bold;
+    }
+    .controls select:focus {
+      outline: none;
+      border-color: #ffcb05;
+      box-shadow: 0 0 8px rgba(255, 203, 5, 0.5);
+    }
+    #loading-screen {
+      text-align: center; 
+      font-size: 1.2em; 
+      margin: 30px;
+      color: #2a75bb;
+      font-weight: bold;
+      font-family: 'Press Start 2P', cursive;
+      text-shadow: 2px 2px 4px rgba(255, 203, 5, 0.5);
+    }
+    .pokemon-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+      gap: 20px;
+      padding: 0 20px 40px;
+    }
+  </style>
+
+  <!-- הוספנו את מפתח ה־API כאן 👇 -->
+  <script>
+    window.YOUTUBE_API_KEY = "AIzaSyAwE8dzVs5YAPY1crR99bnp7Rk0g4lamtM";
+  </script>
+
+  <!-- ואז נטען את הסקריפט שמושך את הסרטונים -->
+  <script src="/favorites.js" defer></script>
+</head>
+<body>
+  <header>
+    <div id="user-info">Loading user…</div>
+    <a href="/search">Back to Search</a>
+  </header>
+
+  <div class="controls">
+    <button id="back-button">Back</button>
+    <label for="sort-select">Sort by:</label>
+    <select id="sort-select">
+      <option value="name">Name</option>
+      <option value="id">ID</option>
+    </select>
+    <button id="download-csv-button">Download CSV</button>
+  </div>
+
+  <div id="loading-screen">Loading favorites…</div>
+  <div id="favorites-container" class="pokemon-grid"></div>
+
+  <script>
+    // fetch the user's name
+    fetch('/api/me', { credentials: 'same-origin' })
+      .then(r => r.ok ? r.json() : Promise.reject())
+      .then(u => {
+        document.getElementById('user-info').textContent =
+          'Logged in as ' + u.firstName;
+      })
+      .catch(() => location.href = '/login');
+  </script>
+</body>
+</html>

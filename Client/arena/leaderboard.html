@@ -1,0 +1,64 @@
+<!-- leaderboard page - shows top players ranked by wins and battle stats -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Player Leaderboard</title>
+  <link rel="stylesheet" href="/arena/leaderboard.css"/>
+</head>
+<body>
+  <!-- main leaderboard container -->
+  <div class="leaderboard-container">
+    <!-- header with back button and title -->
+    <div class="header-section">
+      <button class="back-to-arena-btn" onclick="window.location.href='/arena'">← back to arena</button>
+      <h1 class="leaderboard-title">player leaderboard</h1>
+    </div>
+    
+    <!-- scoring info and refresh button -->
+    <div class="info-section">
+      <div class="scoring-info">
+        <h3>scoring system:</h3>
+        <ul>
+          <li><span class="win-text">win:</span> 3 points</li>
+          <li><span class="tie-text">tie:</span> 1 point</li>
+          <li><span class="loss-text">loss:</span> 0 points</li>
+        </ul>
+        <p class="requirement-text"><strong>requirement:</strong> minimum 5 battles to qualify</p>
+      </div>
+      <button id="refresh-btn">refresh rankings</button>
+    </div>
+
+    <!-- loading message while data loads -->
+    <div id="loading-message" class="loading-message">loading leaderboard...</div>
+    
+    <!-- leaderboard table container -->
+    <div id="leaderboard-table" class="leaderboard-table">
+      <!-- leaderboard will be loaded here -->
+    </div>
+
+    <!-- message when no qualified players found -->
+    <div id="no-players-message" class="no-players-message" style="display: none;">
+      <h3>no qualified players found</h3>
+      <p>players need at least 5 battles to appear on the leaderboard.</p>
+      <p>start battling to qualify for the rankings!</p>
+      <button onclick="window.location.href='/arena/random-vs-player'" class="start-battle-btn">start a battle</button>
+    </div>
+  </div>
+
+  <!-- leaderboard logic script -->
+  <script src="/arena/leaderboard.js"></script>
+  
+  <!-- user online status management -->
+  <script>
+    // mark user offline when page closes
+    window.addEventListener('beforeunload', function() {
+      // send sync request to mark user offline
+      const xhr = new XMLHttpRequest();
+      xhr.open('POST', '/api/offline', false); // sync request
+      xhr.setRequestHeader('Content-Type', 'application/json');
+      xhr.send();
+    });
+  </script>
+</body>
+</html> 

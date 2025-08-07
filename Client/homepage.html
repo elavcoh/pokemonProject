@@ -1,0 +1,120 @@
+<!-- welcome page for pokemon app -->
+<!-- landing page with project info and nav options -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to the Pokémon App</title>
+  <link rel="stylesheet" href="/home.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ffcb05, #2a75bb);
+      color: #2a2a2a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: white;
+      border-radius: 16px;
+      padding: 40px;
+      max-width: 600px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      color: #2a75bb;
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      text-shadow: 2px 2px #ffcb05;
+    }
+
+    .description {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    .developers {
+      margin: 25px 0;
+      text-align: left;
+      background: #f7f7f7;
+      padding: 15px;
+      border-radius: 8px;
+      border-left: 6px solid #ffcb05;
+    }
+
+    .developers h2 {
+      margin-top: 0;
+      color: #2a75bb;
+    }
+
+    .button-container {
+      margin-top: 25px;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .btn {
+      background: #ffcb05;
+      color: #2a75bb;
+      font-weight: bold;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: all 0.2s ease-in-out;
+    }
+
+    .btn:hover {
+      background: #2a75bb;
+      color: white;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <!-- main content wrapper -->
+  <div class="container">
+    <h1>Welcome to the Pokémon App</h1>
+
+    <!-- project description and value prop -->
+    <p class="description">
+      Catch, collect, and battle with your favorite Pokémon!
+    </p>
+
+    <!-- developer info section -->
+    <section class="developers">
+      <h2>Developed by:</h2>
+      <ul>
+        <li>Elav Cohen – 208698100</li>
+        <li>Alon Reuven – 322304296</li>
+      </ul>
+    </section>
+
+    <!-- nav buttons for user flow -->
+    <div class="button-container">
+      <a href="/register" class="btn">Register</a>
+      <a href="/search"   class="btn">Start Adventure</a>
+    </div>
+  </div>
+
+  <!-- user online status management -->
+  <script>
+    // mark user offline when page closes
+    window.addEventListener('beforeunload', function() {
+      // send sync request to mark user offline
+      const xhr = new XMLHttpRequest();
+      xhr.open('POST', '/api/offline', false); // sync request
+      xhr.setRequestHeader('Content-Type', 'application/json');
+      xhr.send();
+    });
+  </script>
+</body>
+</html>

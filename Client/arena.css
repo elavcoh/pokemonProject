@@ -1,0 +1,68 @@
+/* arena page stylesheet */
+/* controls main arena interface styling and battle mode selection */
+
+/* global body styling with pokemon background */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-image: url('https://wallpapercave.com/uwp/uwp4775786.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* main arena container with semi-transparent background */
+.arena-container {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 40px 20px;
+    background: rgba(255,255,255,0.85);
+    border-radius: 12px;
+    text-align: center;
+  }
+  
+/* arena title with pixel font and outline effect */
+.arena-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.5rem;
+    color: #FFCB05;
+    text-shadow:
+      -2px 0 #2A75BB,
+       0 2px #2A75BB,
+       2px 0 #2A75BB,
+       0 -2px #2A75BB;
+    margin-bottom: 30px;
+  }
+  
+/* battle mode and navigation buttons */
+#back-button,
+#vs-bot-button,
+#vs-player-button,
+#battle-history-button,
+#leaderboard-button {
+    background-color: #ffcb05;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+    color: #2a75bb;
+    font-weight: bold;
+    margin: 0 10px;
+    box-shadow: 0 4px 15px rgba(42, 117, 187, 0.15);
+    font-family: 'Press Start 2P', cursive;
+  }
+
+/* button hover effects with gradient and lift */
+#back-button:hover,
+#vs-bot-button:hover,
+#vs-player-button:hover,
+#battle-history-button:hover,
+#leaderboard-button:hover {
+    background: linear-gradient(45deg, #ffcb05 60%, #ffe066 100%);
+    box-shadow: 0 8px 24px rgba(42, 117, 187, 0.25);
+    transform: translateY(-3px) scale(1.07);
+  }

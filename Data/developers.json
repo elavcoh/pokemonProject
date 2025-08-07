@@ -1,0 +1,35 @@
+{
+  "developers": [
+    {
+      "name": "Alon Cohen",
+      "id": "123456789",
+      "role": "Full Stack Developer"
+    },
+    {
+      "name": "Elav Cohen", 
+      "id": "987654321",
+      "role": "Full Stack Developer"
+    }
+  ],
+  "project": {
+    "name": "Pokémon Battle Arena",
+    "description": "A comprehensive Pokémon-themed web application that allows users to search for Pokémon, manage favorites, and engage in battles against AI bots and other players. The application features user authentication, real-time battle mechanics, leaderboards, and a complete Pokémon database integration.",
+    "features": [
+      "User registration and authentication system",
+      "Pokémon search and database integration",
+      "Favorites management with CSV export",
+      "Battle arena with AI and player vs player modes",
+      "Real-time leaderboards and rankings",
+      "Responsive design with Pokémon theming",
+      "Session management and security"
+    ],
+    "technologies": [
+      "Node.js",
+      "Express.js", 
+      "HTML5/CSS3/JavaScript",
+      "Pokémon API",
+      "JSON file storage",
+      "Session management"
+    ]
+  }
+} 

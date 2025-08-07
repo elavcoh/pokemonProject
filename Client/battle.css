@@ -1,0 +1,114 @@
+/* battle page stylesheet */
+/* controls battle interface styling, pokemon cards, and battle animations */
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background: #2a75bb;
+    color: #fff;
+  }
+  .logout-btn {
+    background-color: #ffcb05;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    color: #2a75bb;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  .logout-btn:hover { background-color: #f5b700; }
+  
+  .battle-container {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 30px 20px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 12px;
+    text-align: center;
+  }
+  .battle-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    color: #FFCB05;
+    text-shadow:
+      -2px 0 #2A75BB,
+       0 2px #2A75BB,
+       2px 0 #2A75BB,
+       0 -2px #2A75BB;
+    margin-bottom: 20px;
+  }
+  .battle-area {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .weight-selector {
+    font-family: 'Segoe UI', sans-serif;
+    margin-bottom: 20px;
+  }
+  .weight-selector h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  .weight-selector label {
+    margin-right: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  #fight-btn {
+    background-color: #ffcb05;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #2a75bb;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  #fight-btn:hover {
+    background-color: #f5b700;
+    color: #000;
+  }
+  .countdown {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    margin: 20px 0;
+  }
+  .result {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  .pokemon-card.winner {
+    border-color: #4CAF50;
+    box-shadow: 0 0 15px #4CAF50;
+  }
+  .pokemon-card.loser {
+    opacity: 0.5;
+  }
+  
+  /* nav buttons */
+  .nav-btn {
+    background-color: #ffcb05;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #2a75bb;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+  }
+  .nav-btn:hover {
+    background-color: #f5b700;
+  }
+  

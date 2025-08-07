@@ -1,0 +1,90 @@
+<!-- arena main page - battle mode selection and nav hub -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arena</title>
+  <link rel="stylesheet" href="/pokemon.css" />
+  <link rel="stylesheet" href="/arena.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- main arena container with battle options -->
+  <div class="arena-container">
+    <h1 class="arena-title">Arena</h1>
+    <!-- daily battle limit display - shows remaining battles and resets at midnight -->
+    <div id="battle-limit-info" style="text-align: center; margin: 20px; padding: 10px; background: #f0f0f0; border-radius: 8px;">
+      <p><strong>Daily Battle Limit:</strong> <span id="battles-used">0</span>/5 battles used</p>
+      <p><strong>Remaining:</strong> <span id="battles-remaining">5</span> battles today</p>
+      <p><small>Limit resets at midnight</small></p>
+    </div>
+    <!-- battle mode and nav buttons -->
+    <button id="back-button">Back to Search</button>
+    <button id="vs-bot-button">vs-bot</button>
+    <button id="vs-player-button">vs-player</button>
+    <button id="battle-history-button">Battle History</button>
+    <button id="leaderboard-button">Leaderboard</button>
+  </div>
+
+  <script>
+    // load and show daily battle limit info from server
+    async function loadBattleLimitInfo() {
+      try {
+        const res = await fetch('/api/battle-limit');
+        if (res.ok) {
+          const data = await res.json();
+          document.getElementById('battles-used').textContent = data.battlesUsed || 0;
+          document.getElementById('battles-remaining').textContent = data.battlesRemaining || 5;
+          
+          // change color if battles are used up
+          if (data.battlesRemaining === 0) {
+            document.getElementById('battle-limit-info').style.background = '#ffebee';
+            document.getElementById('battle-limit-info').style.color = '#c62828';
+          }
+        }
+      } catch (error) {
+        console.error('error loading battle limit info:', error);
+      }
+    }
+
+    // load battle limit info when page loads
+    loadBattleLimitInfo();
+
+    // nav event listeners
+    document.getElementById('back-button')
+      .addEventListener('click', () => {
+        window.location.href = '/search';
+      });
+
+    document.getElementById('vs-bot-button')
+      .addEventListener('click', () => {
+        window.location.href = '/arena/vs-bot';
+      });
+
+    document.getElementById('vs-player-button')
+      .addEventListener('click', () => {
+        window.location.href = '/arena/random-vs-player';
+      });
+
+    document.getElementById('battle-history-button')
+      .addEventListener('click', () => {
+        window.location.href = '/arena/battle-history';
+      });
+
+    document.getElementById('leaderboard-button')
+      .addEventListener('click', () => {
+        window.location.href = '/arena/leaderboard';
+      });
+
+    // mark user offline when page closes
+    window.addEventListener('beforeunload', function() {
+      // send sync request to mark user offline
+      const xhr = new XMLHttpRequest();
+      xhr.open('POST', '/api/offline', false); // sync request
+      xhr.setRequestHeader('Content-Type', 'application/json');
+      xhr.send();
+    });
+  </script>
+</body>
+</html>
