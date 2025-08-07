@@ -7,7 +7,7 @@ const fs      = require('fs');
 const session = require('express-session');
 
 const app  = express();
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 
 // parse request body data
 app.use(express.urlencoded({ extended: true }));
